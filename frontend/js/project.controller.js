@@ -8,8 +8,4 @@ function ProjectController (ProjectData){
 
   vm.projects = ProjectData.projects
 
-  // vm.hover = function(project) {
-  //   // Shows/hides the project name on hover
-  //   return project.showName != project.showName;
-  // };
 }

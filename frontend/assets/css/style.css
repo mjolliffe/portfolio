@@ -61,13 +61,13 @@ body {
 
 h1 {
   font-family: "Fredoka One", cursive;
-  font-size: 3em;
+  font-size: 6em;
   color: #ff14ba;
   text-align: center; }
 
 h2 {
   font-family: "Fredoka One", cursive;
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: #3685BF;
   text-align: center;
   margin-top: 10px; }
@@ -93,16 +93,31 @@ h3 {
   float: left;
   margin: 5px; }
 
+#transition-hover-content {
+  background-color: #3685BF;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s; }
+
+#transition-hover:hover #transition-hover-content {
+  opacity: 1; }
+
 a:hover {
   text-decoration: none; }
 
 input {
   text-decoration: none;
-  color: white;
-  background-color: #F4D916;
+  background: none;
   border: none;
   padding: 5px;
   font-size: 24px; }
+
+input:hover {
+  background-color: #F4D916; }
 
 .about {
   text-align: center; }

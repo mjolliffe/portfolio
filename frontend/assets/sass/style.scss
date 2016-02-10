@@ -77,14 +77,14 @@ body {
 
 h1 {
   font-family: $primary;
-  font-size: 3em;
+  font-size: 6em;
   color: $pink;
   text-align: center;
 }
 
 h2 {
   font-family: $primary;
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: $blue;
   text-align: center;
   margin-top: 10px;
@@ -115,17 +115,36 @@ h3 {
   margin: 5px;
 }
 
+
+#transition-hover-content {
+  background-color: $blue;
+  padding: 10px;
+  opacity:0;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  transition:.5s;
+}
+
+#transition-hover:hover #transition-hover-content {
+    opacity:1;
+}
+
 a:hover{
   text-decoration: none;
 }
 
 input {
   text-decoration: none;
-  color: white;
-  background-color: $yellow;
+  background: none;
   border: none;
   padding: 5px;
   font-size: 24px;
+}
+
+input:hover {
+  background-color: $yellow;
 }
 
 .about {

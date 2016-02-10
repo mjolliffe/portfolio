@@ -6,7 +6,6 @@ angular.module('Portfolio')
   service.projects = [
     {
       "name": "Palette Website",
-      "showName": false,
       "image": "",
       "date": 2015,
       "description": "",
@@ -16,7 +15,6 @@ angular.module('Portfolio')
     },
     {
       "name": "Parkeez Visual Identity + Website",
-      "showName": false,
       "image": "",
       "date": 2016,
       "description": "",
