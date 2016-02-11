@@ -1,21 +1,13 @@
 angular.module('Portfolio')
-.factory('ProjectData', function() {
+.factory('ProjectData', function($state) {
 
   var service = {}
 
   service.projects = [
     {
-      "name": "Palette Website",
-      "image": "",
-      "date": 2015,
-      "description": "",
-      "web": true,
-      "design": true,
-      "print": false
-    },
-    {
+      "id": 1,
       "name": "Parkeez Visual Identity + Website",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2016,
       "description": "",
       "web": true,
@@ -23,8 +15,9 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 2,
       "name": "Aleph Bet Learning Game",
-      "image": "",
+      "image": "assets/images/aleph.png",
       "date": 2015,
       "description": "",
       "web": true,
@@ -32,8 +25,9 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 3,
       "name": "Cascade Brewing Visual Identity",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -41,8 +35,9 @@ angular.module('Portfolio')
       "print": true
     },
     {
+      "id": 4,
       "name": "Milky Web Poster",
-      "image": "",
+      "image": "assets/images/Boob2.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -50,8 +45,9 @@ angular.module('Portfolio')
       "print": true
     },
     {
+      "id": 5,
       "name": "Mishima Concert Poster",
-      "image": "",
+      "image": "assets/images/mishima2.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -59,8 +55,9 @@ angular.module('Portfolio')
       "print": true
     },
     {
+      "id": 6,
       "name": "Create Poster",
-      "image": "",
+      "image": "assets/images/Create1.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -68,8 +65,19 @@ angular.module('Portfolio')
       "print": true
     },
     {
+      "id": 7,
+      "name": "Palette Website",
+      "image": "assets/images/palette.png",
+      "date": 2015,
+      "description": "",
+      "web": true,
+      "design": true,
+      "print": false
+    },
+    {
+      "id": 8,
       "name": "Design Questions Visual Identity + Website",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2016,
       "description": "",
       "web": true,
@@ -77,8 +85,9 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 9,
       "name": "Providence Granola Project Packaging",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -86,8 +95,9 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 10,
       "name": "10 Principles of Design Website",
-      "image": "",
+      "image": "assets/images/GoodDesign1-500.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -95,8 +105,9 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 11,
       "name": "Treehouse Visual Identity",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -104,8 +115,9 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 12,
       "name": "Baja California Real Estate Visual Identities",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -113,8 +125,9 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 13,
       "name": "Asia Travel Book",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2015,
       "description": "",
       "web": false,
@@ -122,8 +135,9 @@ angular.module('Portfolio')
       "print": true
     },
     {
+      "id": 14,
       "name": "Calligraphy Series",
-      "image": "",
+      "image": "assets/images/Beer.jpg",
       "date": 2015,
       "description": "",
       "web": false,

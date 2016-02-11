@@ -62,7 +62,7 @@ body {
 h1 {
   font-family: "Fredoka One", cursive;
   font-size: 6em;
-  color: #ff14ba;
+  color: #EB006B;
   text-align: center; }
 
 h2 {
@@ -86,15 +86,16 @@ h3 {
   margin: 2% 38%; }
 
 .entry {
-  width: 250px;
-  height: 250px;
+  width: 360px;
+  height: 360px;
   font-family: "Fredoka One", cursive;
-  background-color: #338077;
+  /*  background-color: $teal;
+*/
   float: left;
-  margin: 5px; }
+  margin: 5px;
+  white-space: pre-line; }
 
 #transition-hover-content {
-  background-color: #3685BF;
   padding: 10px;
   opacity: 0;
   -webkit-transition: .5s;

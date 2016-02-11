@@ -11,8 +11,7 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <div ng-repeat="project in vm.projects | filter:categories" class="entry" id="transition-hover">
-        <a href=""><h3 id="transition-hover-content">{{project.name}}</h3></a>
+     <!--  <a ng-href="#/project/{{project.id}}"> --><div ng-repeat="project in vm.projects | filter:categories" class="entry" id="transition-hover" ng-style="{'background-image': 'url({{project.image}})'}" ng-click="changeState()" ui-sref-active="active" ui-sref="/project/{{project.id}}"><h3 id="transition-hover-content">{{project.name}}</h3>
       </div>
     </div>
   </div>

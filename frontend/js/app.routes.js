@@ -14,7 +14,7 @@ function AppRoutes($stateProvider, $urlRouterProvider){
       templateUrl: 'portfolio.html'
     })
     .state('project', {
-      url:'/project',
+      url:'/project/:id',
       templateUrl:'project.html'
     });
     $urlRouterProvider.otherwise('/');

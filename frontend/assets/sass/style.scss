@@ -51,7 +51,7 @@ $secondary: 'Nixie One', cursive;
 /* colors */
 
 $light-pink: #eda9c4;
-$pink: #ff14ba;
+$pink: #EB006B;
 $green: #008000;
 $yellow: #F4D916;
 $blue: #3685BF;
@@ -107,17 +107,18 @@ h3 {
 }
 
 .entry {
-  width: 250px;
-  height: 250px;
+  width: 360px;
+  height: 360px;
   font-family: $primary;
-  background-color: $teal;
-  float: left;
+/*  background-color: $teal;
+*/  float: left;
   margin: 5px;
+white-space: pre-line;
+
 }
 
 
 #transition-hover-content {
-  background-color: $blue;
   padding: 10px;
   opacity:0;
   -webkit-transition:.5s;
