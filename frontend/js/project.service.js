@@ -78,7 +78,7 @@ angular.module('Portfolio')
     {
       "id": 8,
       "name": "Design Questions Visual Identity + Website",
-      "image": "assets/images/Beer.jpg",
+      "image": "assets/images/design.png",
       "date": 2016,
       "description": "",
       "web": true,
@@ -86,9 +86,49 @@ angular.module('Portfolio')
       "print": false
     },
     {
+      "id": 14,
+      "name": "Calligraphy Series",
+      "image": "assets/images/neruda.jpg",
+      "date": 2015,
+      "description": "",
+      "web": false,
+      "design": true,
+      "print": true
+    },
+    {
+      "id": 12,
+      "name": "Baja California Real Estate Visual Identities",
+      "image": "assets/images/torza.png",
+      "date": 2015,
+      "description": "",
+      "web": false,
+      "design": true,
+      "print": false
+    },
+    {
+      "id": 13,
+      "name": "Asia Travel Book",
+      "image": "assets/images/asia2.png",
+      "date": 2015,
+      "description": "",
+      "web": false,
+      "design": true,
+      "print": true
+    },
+    {
+      "id": 11,
+      "name": "TreeStack Visual Identity",
+      "image": "assets/images/treestack.png",
+      "date": 2015,
+      "description": "",
+      "web": false,
+      "design": true,
+      "print": false
+    },
+    {
       "id": 9,
       "name": "Providence Granola Project Packaging",
-      "image": "assets/images/Beer.jpg",
+      "image": "assets/images/nuts.png",
       "date": 2015,
       "description": "",
       "web": false,
@@ -104,46 +144,6 @@ angular.module('Portfolio')
       "web": false,
       "design": true,
       "print": false
-    },
-    {
-      "id": 11,
-      "name": "Treehouse Visual Identity",
-      "image": "assets/images/Beer.jpg",
-      "date": 2015,
-      "description": "",
-      "web": false,
-      "design": true,
-      "print": false
-    },
-    {
-      "id": 12,
-      "name": "Baja California Real Estate Visual Identities",
-      "image": "assets/images/Beer.jpg",
-      "date": 2015,
-      "description": "",
-      "web": false,
-      "design": true,
-      "print": false
-    },
-    {
-      "id": 13,
-      "name": "Asia Travel Book",
-      "image": "assets/images/Beer.jpg",
-      "date": 2015,
-      "description": "",
-      "web": false,
-      "design": true,
-      "print": true
-    },
-    {
-      "id": 14,
-      "name": "Calligraphy Series",
-      "image": "assets/images/Beer.jpg",
-      "date": 2015,
-      "description": "",
-      "web": false,
-      "design": true,
-      "print": true
     }
   ];
 
