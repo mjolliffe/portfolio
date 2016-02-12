@@ -57,7 +57,8 @@ body {
   height: 100%; }
 
 .center {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 h1 {
   font-family: "Fredoka One", cursive;
@@ -80,6 +81,11 @@ h3 {
   text-align: center;
   margin-top: 50%; }
 
+p {
+  color: white;
+  font-size: 18px;
+  line-height: 32px; }
+
 .row {
   margin: 0 auto; }
 
@@ -94,6 +100,18 @@ h3 {
   float: left;
   margin: 5px;
   white-space: pre-line; }
+
+#banner {
+  background-color: #EB006B;
+  color: white;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px; }
+
+#headshot {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%; }
 
 #transition-hover-content {
   padding: 10px;
@@ -121,8 +139,9 @@ input {
 input:hover {
   background-color: #F4D916; }
 
-.about {
-  text-align: center; }
+.info {
+  padding-top: 30px; }
 
-.contact {
-  text-align: center; }
+.fa {
+  color: white;
+  padding: 30px 5px 0px; }

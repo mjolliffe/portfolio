@@ -16,7 +16,7 @@ angular.module('Portfolio')
     },
     {
       "id": 2,
-      "name": "Aleph Bet Learning Game",
+      "name": "Aleph Bet - Hebrew Alphabet Learning Game",
       "image": "assets/images/aleph.png",
       "date": 2015,
       "description": "",
@@ -38,7 +38,7 @@ angular.module('Portfolio')
     {
       "id": 4,
       "name": "Milky Web Poster",
-      "image": "assets/images/Boob2.jpg",
+      "image": "assets/images/milkyweb.jpg",
       "date": 2015,
       "description": "Poster printed on Paper. 90cm x 128cm. 2015. “The Milky Web” is a project created to comment on the movement of society towards rearing children raised, from birth, in a tech-heavy world. In extreme cases children are given technology instead of personal attention.",
       "web": false,
@@ -58,7 +58,7 @@ angular.module('Portfolio')
     {
       "id": 6,
       "name": "Create Poster",
-      "image": "assets/images/Create1.jpg",
+      "image": "assets/images/create.jpg",
       "date": 2015,
       "description": "Positive Propaganda printed on Cloth. 60cm x 100 cm. Created emphasize the importance of bringing ideas to life instead of just leaving them as ideas. Designers and artists spend a lot of time pouring over their concepts when they should probably be getting to work. Without action there is no art.",
       "web": false,
@@ -98,7 +98,7 @@ angular.module('Portfolio')
     {
       "id": 10,
       "name": "10 Principles of Design Website",
-      "image": "assets/images/GoodDesign1-500.jpg",
+      "image": "assets/images/dieter.jpg",
       "date": 2015,
       "description": "Customized website created to promote Dieter Rams' 10 Principles for Good Design. The website is meant to be simple, direct, and user-friendly.",
       "web": false,

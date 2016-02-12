@@ -73,6 +73,7 @@ body {
 
 .center {
   margin: 0 auto;
+  text-align: center;
 }
 
 h1 {
@@ -99,6 +100,12 @@ h3 {
   margin-top: 50%;
 }
 
+p {
+  color: white;
+  font-size: 18px;
+  line-height: 32px;
+}
+
 .row {
   margin: 0 auto;
 }
@@ -115,6 +122,20 @@ h3 {
   float: left;
   margin: 5px;
   white-space: pre-line;
+}
+
+#banner {
+  background-color: $pink;
+  color: white;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+#headshot {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
 }
 
 #transition-hover-content {
@@ -148,10 +169,11 @@ input:hover {
   background-color: $yellow;
 }
 
-.about {
-text-align: center;
+.info {
+  padding-top: 30px;
 }
 
-.contact {
-text-align: center;
+.fa {
+  color: white;
+  padding: 30px 5px 0px;
 }
