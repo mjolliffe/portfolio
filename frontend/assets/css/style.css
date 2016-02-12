@@ -62,14 +62,14 @@ body {
 
 h1 {
   font-family: "Fredoka One", cursive;
-  font-size: 6em;
+  font-size: 5.25em;
   color: #EB006B;
   text-align: center;
   margin: 0px 5px; }
 
 h2 {
   font-family: "Fredoka One", cursive;
-  font-size: 2.5em;
+  font-size: 2.25em;
   color: #3685BF;
   text-align: center;
   margin-top: 10px; }
@@ -97,7 +97,7 @@ p {
   width: 274px;
   height: 274px;
   font-family: "Fredoka One", cursive;
-  float: left;
+  /*  float: left;*/
   margin: 5px;
   white-space: pre-line; }
 
@@ -111,6 +111,7 @@ p {
 #headshot {
   width: 274px;
   height: 274px;
+  border: 20px inset #B1FF4A;
   border-radius: 50%; }
 
 #transition-hover-content {
@@ -137,11 +138,11 @@ input {
   font-size: 24px; }
 
 input:hover {
-  color: #EB006B; }
+  color: #B1FF4A; }
 
 .info {
   padding-top: 30px; }
 
 .fa {
   color: white;
-  padding: 30px 5px 0px; }
+  padding: 30px 5px 32px 0px; }
