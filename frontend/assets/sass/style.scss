@@ -65,7 +65,7 @@ $teal: #338077;
 }
 
 body {
-  padding-top: 75px;
+  padding-top: 50px;
   font-family: $secondary;
   overflow: scroll !important;
   height: 100%;
@@ -80,6 +80,7 @@ h1 {
   font-size: 6em;
   color: $pink;
   text-align: center;
+  margin: 0px 5px;
 }
 
 h2 {
@@ -104,23 +105,22 @@ h3 {
 
 .buttons {
   margin: 2% 38%;
+  text-align: center;
 }
 
 .entry {
-  width: 360px;
-  height: 360px;
+  width: 274px;
+  height: 274px;
   font-family: $primary;
-/*  background-color: $teal;
-*/  float: left;
+  float: left;
   margin: 5px;
-white-space: pre-line;
-
+  white-space: pre-line;
 }
-
 
 #transition-hover-content {
   padding: 10px;
   opacity:0;
+  background-color: rgba(0,150,150,0.8);
   -webkit-transition:.5s;
   -moz-transition:.5s;
   -o-transition:.5s;

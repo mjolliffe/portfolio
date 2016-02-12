@@ -1,30 +1,20 @@
 angular.module('Portfolio')
   .controller('ProjectController', ProjectController);
 
-ProjectController.$inject = ['ProjectData'];
+ProjectController.$inject = ['ProjectData', '$state', '$stateParams', '$scope'];
 
-function ProjectController (ProjectData){
+function ProjectController (ProjectData, $state, $stateParams, $scope){
   var vm = this;
-
   vm.projects = ProjectData.projects
 
-  // function($state) {
-  //   this.changeState = function () {
-  //     $state.go('project.id');
-  //   };
-  // }
-
-  // function setCurrent(project){
-  //   console.log('click')
-  //   $state.go('project', {"id": project.id})
-  // }
-
-  // vm.showProject = function(project) {
-  //   console.log('click')
-  //   $location.path('#/project/' + project.id);
-  // };
-
-  vm.changeState = function () {
-    $state.go('project', {"id":project.id});
+  vm.changeState = function (project) {
+    console.log("in changeState: ", project)
+    $state.go('project', {project: {id: project.id}});
   };
+
+  $scope.project = $stateParams.project
+  // $scope.apple = $stateParams.id
+  // console.log("States: ", $stateParams.project)
+  // console.log("Project: ", vm.project)
+  return this;
 }
