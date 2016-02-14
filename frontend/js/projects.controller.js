@@ -7,14 +7,6 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
 
   $scope.project = $scope.projects[$stateParams.id]
 
-  // $scope.show = function (){
-  //   if ($scope.project.id == 0) {
-  //     $scope.show = false
-  //   } else {
-  //     $scope.show = true
-  //   }
-  // }
-
   $scope.technology = $scope.project.technology
 
   $scope.url = $scope.project.url
@@ -37,4 +29,5 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
       $scope.show = true
     }
   }
+
 }

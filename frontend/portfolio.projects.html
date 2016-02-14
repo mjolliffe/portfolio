@@ -21,7 +21,7 @@
         <h4>{{project.name}}</h4>
         <p class="p">{{project.description}}</p>
         <h6 ng-repeat="i in technology" style="display:inline-block">{{i}}</h6>
-        <a href="{{project.url}}" target="_blank"><h6 id="pink">Website</h6></a>
+        <a href="{{project.url}}" target="_blank" ng-show="project.url"><h6 id="pink">Website</h6></a>
       </div>
       <div class="col-md-1 middle">
         <a ng-href="#/portfolio/{{project.id}}" ng-click="goNext()"><div ng-show="project.id != 13"><h5>+</h5></div></a>
