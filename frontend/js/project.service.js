@@ -4,7 +4,7 @@ angular.module('Portfolio')
   var service = {}
   service.projects = [
     {
-      "id": 1,
+      "id": 0,
       "name": "Parkeez Visual Identity + Website",
       "image": "assets/images/parkeez.png",
       "date": 2016,
@@ -15,7 +15,7 @@ angular.module('Portfolio')
       "technology": ["JavaScript", "HTML5", "SaSS"]
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Aleph Bet - Hebrew Alphabet Learning Game",
       "image": "assets/images/aleph.png",
       "date": 2015,
@@ -26,7 +26,7 @@ angular.module('Portfolio')
       "technology": ["JavaScript", "HTML5", "SaSS"]
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Cascade Brewing Visual Identity",
       "image": "assets/images/Beer.jpg",
       "date": 2015,
@@ -36,7 +36,7 @@ angular.module('Portfolio')
       "print": true
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Milky Web Poster",
       "image": "assets/images/milkyweb.jpg",
       "date": 2015,
@@ -46,7 +46,7 @@ angular.module('Portfolio')
       "print": true
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Mishima Concert Poster",
       "image": "assets/images/mishima.jpg",
       "date": 2015,
@@ -56,7 +56,7 @@ angular.module('Portfolio')
       "print": true
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Create Poster",
       "image": "assets/images/create.jpg",
       "date": 2015,
@@ -66,7 +66,7 @@ angular.module('Portfolio')
       "print": true
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Palette Website",
       "image": "assets/images/palette.png",
       "date": 2015,
@@ -76,7 +76,7 @@ angular.module('Portfolio')
       "print": false
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Design Questions Visual Identity + Website",
       "image": "assets/images/design.png",
       "date": 2016,
@@ -86,7 +86,7 @@ angular.module('Portfolio')
       "print": false
     },
     {
-      "id": 14,
+      "id": 8,
       "name": "Calligraphy Series",
       "image": "assets/images/neruda.jpg",
       "date": 2015,
@@ -96,7 +96,7 @@ angular.module('Portfolio')
       "print": true
     },
     {
-      "id": 12,
+      "id": 9,
       "name": "Baja California Real Estate Visual Identities",
       "image": "assets/images/torza.png",
       "date": 2015,
@@ -106,7 +106,7 @@ angular.module('Portfolio')
       "print": false
     },
     {
-      "id": 13,
+      "id": 10,
       "name": "Asia Travel Book",
       "image": "assets/images/asia2.png",
       "date": 2015,
@@ -126,7 +126,7 @@ angular.module('Portfolio')
       "print": false
     },
     {
-      "id": 9,
+      "id": 12,
       "name": "Providence Granola Project Packaging",
       "image": "assets/images/nuts.png",
       "date": 2015,
@@ -136,7 +136,7 @@ angular.module('Portfolio')
       "print": false
     },
     {
-      "id": 10,
+      "id": 13,
       "name": "10 Principles of Design Website",
       "image": "assets/images/dieter.jpg",
       "date": 2015,

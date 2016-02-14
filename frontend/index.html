@@ -19,7 +19,8 @@
   <!-- angular routing -->
   <script src="js/app.modules.js"></script>
   <script src="js/app.routes.js"></script>
-  <script src="js/project.controller.js"></script>
+  <script src="js/portfolio.controller.js"></script>
+  <script src="js/projects.controller.js"></script>
   <script src="js/project.service.js"></script>
 <!--   // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
 </head>
@@ -27,7 +28,7 @@
   <header>
   </header>
   <main>
-  <div ui-view ng-controller="ProjectController as vm">
+  <div ui-view>  <!-- ng-controller="PortfolioController as vm" -->
   </div>
   </main>
     <!-- Link to ThreeJS library -->

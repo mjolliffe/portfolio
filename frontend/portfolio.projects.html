@@ -1,3 +1,4 @@
+<div ui-view>
 <div class="container">
   <div class="row">
     <div class="col-md-12 center">
@@ -7,14 +8,16 @@
           <img src="{{project.image}}" alt="">
         </div>
         <div class="col-xs-4 col-sm-6 col-md-6">
-          <p>{{project.date}} {{project.description}}</p>
+          <h4>{{project.date}} {{project.description}}</h4>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-        <div ui-sref="project({id: project.id, project: project})" ng-click="vm.changeProject(project)">
-       <h2>Next</h2>
-      </div>
+      <a ng-href="#/portfolio/{{project.id-1}}"><</a>
+      <a ng-href="#/portfolio/{{project.id+1}}">></a>
+      <div ng-click="goBack()">back</div>
+      <div ng-click="goNext()">next</div>
   </div>
+</div>
 </div>
