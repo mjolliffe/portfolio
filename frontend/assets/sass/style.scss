@@ -127,6 +127,15 @@ h6 {
   font-size: 18px;
   color: white;
   background-color: $blue;
+  padding: 12px 5px;
+  margin: 10px 5px 10px 0px;
+}
+
+h7 {
+  font-family: $secondary;
+  font-size: 18px;
+  color: white;
+  background-color: $pink;
   padding: 10px 5px;
   margin: 10px 5px 10px 0px;
 }
@@ -157,7 +166,7 @@ p {
   width: 274px;
   height: 274px;
   font-family: $primary;
-/*  float: left;*/
+  float: left;
   margin: 5px;
   white-space: pre-line;
 }
