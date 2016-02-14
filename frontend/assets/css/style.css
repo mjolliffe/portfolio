@@ -107,13 +107,9 @@ h6 {
   padding: 12px 5px;
   margin: 10px 5px 10px 0px; }
 
-h7 {
-  font-family: "Nixie One", cursive;
-  font-size: 18px;
-  color: white;
+h6#pink {
   background-color: #EB006B;
-  padding: 10px 5px;
-  margin: 10px 5px 10px 0px; }
+  max-width: 82px; }
 
 p {
   color: white;
