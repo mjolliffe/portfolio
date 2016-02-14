@@ -56,6 +56,12 @@ body {
   overflow: scroll !important;
   height: 100%; }
 
+.col-md-12 {
+  padding: none; }
+
+.col-xs-12 {
+  padding: none; }
+
 .center {
   margin: 0 auto;
   text-align: center; }
@@ -124,7 +130,8 @@ p {
   margin-bottom: 10px; }
 
 .row {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 .buttons {
   margin: 2% 38%;
@@ -134,8 +141,8 @@ p {
   width: 274px;
   height: 274px;
   font-family: "Fredoka One", cursive;
-  float: left;
-  margin: 5px;
+  margin: 5.5px;
+  display: inline-table;
   white-space: pre-line; }
 
 #pink-banner {

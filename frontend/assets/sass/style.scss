@@ -71,6 +71,14 @@ body {
   height: 100%;
 }
 
+.col-md-12 {
+  padding: none;
+}
+
+.col-xs-12 {
+  padding: none;
+}
+
 .center {
   margin: 0 auto;
   text-align: center;
@@ -152,6 +160,7 @@ p {
 
 .row {
   margin: 0 auto;
+  text-align: center;
 }
 
 .buttons {
@@ -163,8 +172,8 @@ p {
   width: 274px;
   height: 274px;
   font-family: $primary;
-  float: left;
-  margin: 5px;
+  margin: 5.5px;
+  display: inline-table;
   white-space: pre-line;
 }
 

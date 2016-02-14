@@ -5,12 +5,8 @@
 <div ui-view ng-controller="PortfolioController">
   <div class="container">
     <div class="row">
-        <div class="col-md-12 col-xs-12">
         <a href="#"><h1>Michelle Jolliffe</h1></a>
-        </div>
-        <div class="col-md-12 col-xs-12">
         <h2>graphic designer + web developer</h2>
-        </div>
     </div>
   </div>
   <div class="container">
@@ -21,7 +17,7 @@
       <input type="button" name="" value="print" ng-click="categories={print: true}">
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="entries">
     <div class="row">
        <!-- <div ng-repeat="project in vm.projects | filter:categories" class="entry" id="transition-hover" ng-style="{'background-image': 'url({{project.image}})'}" ng-click="changeState()" ui-sref-active="active" ui-sref="project/{{project.id}}"> -->
       <a ng-repeat="project in projects | filter:categories" class="entry col-md-4" id="transition-hover" ng-style="{'background-image': 'url({{project.image}})'}" ng-href="#/portfolio/{{project.id}}">
