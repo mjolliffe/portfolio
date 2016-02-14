@@ -60,11 +60,16 @@ body {
   margin: 0 auto;
   text-align: center; }
 
+.middle {
+  margin: 10px auto;
+  text-align: center; }
+
 h1 {
   font-family: "Fredoka One", cursive;
   font-size: 5.25em;
   color: #EB006B;
   text-align: center;
+  text-decoration: none;
   margin: 0px 5px; }
 
 h2 {
@@ -81,10 +86,37 @@ h3 {
   text-align: center;
   margin-top: 50%; }
 
+h4 {
+  font-family: "Nixie One", cursive;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px; }
+
+h5 {
+  font-family: "Fredoka One", cursive;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  text-decoration: none; }
+
+h6 {
+  font-family: "Nixie One", cursive;
+  font-size: 18px;
+  color: white;
+  background-color: #3685BF;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px; }
+
 p {
   color: white;
   font-size: 18px;
   line-height: 32px; }
+
+.p {
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left; }
 
 .row {
   margin: 0 auto; }
@@ -101,9 +133,15 @@ p {
   margin: 5px;
   white-space: pre-line; }
 
-#banner {
+#pink-banner {
   background-color: #EB006B;
   color: white;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px; }
+
+#overlay-banner {
+  background-color: rgba(0, 150, 150, 0.5);
   width: 100%;
   padding: 30px;
   margin-top: 50px; }
@@ -122,12 +160,58 @@ p {
   -moz-transition: .5s;
   -o-transition: .5s;
   -ms-transition: .5s;
-  transition: .5s; }
+  transition: .5s;
+  -webkit-animation-name: example;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 20s;
+  /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+  0% {
+    background-color: #EB006B; }
+  20% {
+    background-color: #eda9c4; }
+  40% {
+    background-color: #B1FF4A; }
+  60% {
+    background-color: #77AB31; }
+  80% {
+    background-color: #3685BF; }
+  100% {
+    background-color: #EB006B; } }
+
+/* Standard syntax */
+@keyframes example {
+  0% {
+    background-color: #EB006B; }
+  20% {
+    background-color: #eda9c4; }
+  40% {
+    background-color: #B1FF4A; }
+  60% {
+    background-color: #77AB31; }
+  80% {
+    background-color: #3685BF; }
+  100% {
+    background-color: #EB006B; } }
 
 #transition-hover:hover #transition-hover-content {
   opacity: 1; }
 
+a:active {
+  text-decoration: none; }
+
 a:hover {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:link {
   text-decoration: none; }
 
 input {

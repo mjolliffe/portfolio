@@ -1,21 +1,32 @@
 <div ui-view>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 center">
-      <h2>{{project.name}}</h2>
-      <div class="row">
-        <div class="col-xs-8 col-sm-6 col-md-6">
-          <img src="{{project.image}}" alt="">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+        <a href="#/portfolio"><h1>Michelle Jolliffe</h1></a>
         </div>
-        <div class="col-xs-4 col-sm-6 col-md-6">
-          <h4>{{project.date}} {{project.description}}</h4>
+        <div class="col-md-12 col-xs-12">
+        <h2>graphic designer + web developer</h2>
         </div>
-      </div>
     </div>
   </div>
-  <div class="row">
-      <a ng-href="#/portfolio/{{project.id}}" ng-click="goBack()"><div ng-show="project.id != 0">back</div></a>
-      <a ng-href="#/portfolio/{{project.id}}" ng-click="goNext()"><div ng-show="project.id != 13">next</div></a>
+  <div class="container" id="overlay-banner">
+
+      <div class="row">
+        <div class="col-md-1 middle">
+          <a ng-href="#/portfolio/{{project.id}}" ng-click="goBack()"><div ng-show="project.id != 0"><h5>-</h5></div></a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3">
+          <img src="{{project.image}}" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7">
+          <h4>{{project.name}}</h4>
+          <p class="p">{{project.description}}</p>
+          <h6 ng-repeat="i in technology" style="display:inline-block">{{i}}</h6>
+          <a href="{{project.url}}" target="_blank">View</a>
+        </div>
+        <div class="col-md-1 middle">
+          <a ng-href="#/portfolio/{{project.id}}" ng-click="goNext()"><div ng-show="project.id != 13"><h5>+</h5></div></a>
+        </div>
+      </div>
   </div>
-</div>
 </div>

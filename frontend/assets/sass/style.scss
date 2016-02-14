@@ -55,7 +55,7 @@ $pink: #EB006B;
 $green: #B1FF4A;
 $yellow: #F4D916;
 $blue: #3685BF;
-$teal: #77AB31;
+$dark-green: #77AB31;
 
 /* universal */
 * {
@@ -76,11 +76,18 @@ body {
   text-align: center;
 }
 
+.middle {
+  margin: 10px auto;
+  text-align: center;
+}
+
+
 h1 {
   font-family: $primary;
   font-size: 5.25em;
   color: $pink;
   text-align: center;
+  text-decoration: none;
   margin: 0px 5px;
 }
 
@@ -100,10 +107,41 @@ h3 {
   margin-top: 50%;
 }
 
+h4 {
+  font-family: $secondary;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-family: $primary;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+h6 {
+  font-family: $secondary;
+  font-size: 18px;
+  color: white;
+  background-color: $blue;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+}
+
 p {
   color: white;
   font-size: 18px;
   line-height: 32px;
+}
+
+.p {
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
 }
 
 .row {
@@ -124,7 +162,7 @@ p {
   white-space: pre-line;
 }
 
-#banner {
+#pink-banner {
   background-color: $pink;
   color: white;
   width: 100%;
@@ -132,6 +170,12 @@ p {
   margin-top: 50px;
 }
 
+#overlay-banner {
+  background-color: rgba(0,150,150,0.5);
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+}
 #headshot {
   width: 274px;
   height: 274px;
@@ -148,13 +192,48 @@ p {
   -o-transition:.5s;
   -ms-transition:.5s;
   transition:.5s;
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 20s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+  0%    {background-color: $pink;}
+  20%   {background-color: $light-pink;}
+  40%   {background-color: $green;}
+  60%   {background-color: $dark-green;}
+  80%   {background-color: $blue;}
+  100%  {background-color: $pink;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%    {background-color: $pink;}
+  20%   {background-color: $light-pink;}
+  40%   {background-color: $green;}
+  60%   {background-color: $dark-green;}
+  80%   {background-color: $blue;}
+  100%  {background-color: $pink;}
 }
 
 #transition-hover:hover #transition-hover-content {
     opacity:1;
 }
 
-a:hover{
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:link{
   text-decoration: none;
 }
 

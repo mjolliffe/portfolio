@@ -15,6 +15,8 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
   //   }
   // }
 
+  $scope.technology = $scope.project.technology
+
   $scope.goBack = function (){
     if ($scope.project.id <= 0) {
       $scope.project.id = $scope.project.id
