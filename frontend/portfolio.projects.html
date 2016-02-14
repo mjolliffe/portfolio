@@ -14,10 +14,8 @@
     </div>
   </div>
   <div class="row">
-      <a ng-href="#/portfolio/{{project.id-1}}"><</a>
-      <a ng-href="#/portfolio/{{project.id+1}}">></a>
-      <div ng-click="goBack()">back</div>
-      <div ng-click="goNext()">next</div>
+      <a ng-href="#/portfolio/{{project.id}}" ng-click="goBack()"><div ng-show="project.id != 0">back</div></a>
+      <a ng-href="#/portfolio/{{project.id}}" ng-click="goNext()"><div ng-show="project.id != 13">next</div></a>
   </div>
 </div>
 </div>
