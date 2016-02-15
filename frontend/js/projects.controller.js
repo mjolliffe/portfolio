@@ -1,7 +1,7 @@
 angular.module('Portfolio')
   .controller('ProjectsController', ProjectsController);
 
-ProjectsController.$inject = ['ProjectData', '$state', '$stateParams', '$scope', '$sce'];
+ProjectsController.$inject = ['ProjectData', '$state', '$stateParams', '$scope'];
 
 function ProjectsController (ProjectData, $state, $stateParams, $scope){
 
@@ -11,9 +11,25 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
 
   $scope.url = $scope.project.url
 
-  // var gifs = []
-  // gifs.push({domain: $sce.trustAsResourceUrl("http://giphy.com")});
-  // $scope.gifs = gifs
+  $scope.photos = $scope.project.photos
+
+  $scope.lastPhoto = function(index){
+    console.log('hi')
+    $scope.image = $scope.photos[ index - 1 ];
+    console.log($scope.image)
+  }
+
+  $scope.nextPhoto = function(index){
+    console.log('bye')
+    $scope.image = $scope.photos[ index + 1 ];
+    console.log($scope.image)
+  }
+
+   $scope.showImage = function( index ) {
+                    // Use -1 to adjust image for zero-based array.
+                    $scope.image = $scope.photos[ index - 1 ];
+                };
+
 
   $scope.goBack = function (){
     if ($scope.project.id <= 0) {

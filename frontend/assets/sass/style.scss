@@ -89,6 +89,16 @@ body {
   text-align: center;
 }
 
+.image {
+  max-width: 274px;
+}
+
+.arrow {
+  color: $green;
+  font-family: $primary;
+  font-size: 30px;
+  margin-top: 40px;
+}
 
 h1 {
   font-family: $primary;
@@ -118,8 +128,10 @@ h3 {
 h4 {
   font-family: $secondary;
   font-size: 2em;
+  font-weight: 400;
   color: white;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 h5 {
@@ -137,6 +149,7 @@ h6 {
   background-color: $blue;
   padding: 12px 5px;
   margin: 10px 5px 10px 0px;
+  text-align: left;
 }
 
 h6#pink {
@@ -163,6 +176,10 @@ p {
   text-align: center;
 }
 
+.row#align-left {
+  margin: 0 auto;
+  text-align: left;
+}
 .buttons {
   margin: 2% 38%;
   text-align: center;
@@ -186,10 +203,20 @@ p {
 }
 
 #overlay-banner {
-  background-color: rgba(0,150,150,0.5);
+  background-color: #77AB31;
   width: 100%;
   padding: 30px;
   margin-top: 50px;
+/*  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  transition:.5s;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 20s;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;*/
 }
 #headshot {
   width: 274px;
@@ -210,7 +237,7 @@ p {
   -webkit-animation-name: example; /* Chrome, Safari, Opera */
   -webkit-animation-duration: 20s; /* Chrome, Safari, Opera */
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
 }
 
@@ -257,7 +284,9 @@ input {
   background: none;
   border: none;
   padding: 5px;
+  font-family: $primary;
   font-size: 24px;
+  color: $dark-green;
 }
 
 input:hover {

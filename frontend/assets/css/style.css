@@ -70,6 +70,15 @@ body {
   margin: 10px auto;
   text-align: center; }
 
+.image {
+  max-width: 274px; }
+
+.arrow {
+  color: #B1FF4A;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  margin-top: 40px; }
+
 h1 {
   font-family: "Fredoka One", cursive;
   font-size: 5.25em;
@@ -95,8 +104,10 @@ h3 {
 h4 {
   font-family: "Nixie One", cursive;
   font-size: 2em;
+  font-weight: 400;
   color: white;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: left; }
 
 h5 {
   font-family: "Fredoka One", cursive;
@@ -111,7 +122,8 @@ h6 {
   color: white;
   background-color: #3685BF;
   padding: 12px 5px;
-  margin: 10px 5px 10px 0px; }
+  margin: 10px 5px 10px 0px;
+  text-align: left; }
 
 h6#pink {
   background-color: #EB006B;
@@ -133,6 +145,10 @@ p {
   margin: 0 auto;
   text-align: center; }
 
+.row#align-left {
+  margin: 0 auto;
+  text-align: left; }
+
 .buttons {
   margin: 2% 38%;
   text-align: center; }
@@ -153,10 +169,20 @@ p {
   margin-top: 50px; }
 
 #overlay-banner {
-  background-color: rgba(0, 150, 150, 0.5);
+  background-color: #77AB31;
   width: 100%;
   padding: 30px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  /*  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  transition:.5s;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 20s;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;*/ }
 
 #headshot {
   width: 274px;
@@ -178,7 +204,7 @@ p {
   -webkit-animation-duration: 20s;
   /* Chrome, Safari, Opera */
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite; }
 
 /* Chrome, Safari, Opera */
@@ -231,7 +257,9 @@ input {
   background: none;
   border: none;
   padding: 5px;
-  font-size: 24px; }
+  font-family: "Fredoka One", cursive;
+  font-size: 24px;
+  color: #77AB31; }
 
 input:hover {
   color: #B1FF4A; }
