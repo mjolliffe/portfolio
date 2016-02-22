@@ -13,9 +13,14 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
 
   $scope.photos = $scope.project.photos
 
+  $scope.shown = []
+
   $scope.lastPhoto = function(index){
     console.log('hi')
-    $scope.image = $scope.photos[ index - 1 ];
+    // $scope.image = $scope.photos[ index - 1 ];
+    angular.forEach(photos, function(value, key) {
+      $scope.shown.push(value);
+    });
     console.log($scope.image)
   }
 
@@ -24,12 +29,6 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
     $scope.image = $scope.photos[ index + 1 ];
     console.log($scope.image)
   }
-
-   $scope.showImage = function( index ) {
-                    // Use -1 to adjust image for zero-based array.
-                    $scope.image = $scope.photos[ index - 1 ];
-                };
-
 
   $scope.goBack = function (){
     if ($scope.project.id <= 0) {
