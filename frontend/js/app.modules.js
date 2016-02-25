@@ -2,7 +2,7 @@
 "use strict"
 
 angular
-  .module('Portfolio', ['ui.router'])
+  .module('Portfolio', ['ui.router', 'ui.bootstrap'])
 
 })()
 

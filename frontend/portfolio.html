@@ -1,15 +1,6 @@
-<!-- /*<style>
-  body { margin: 0; }
-  canvas { width: 100%; height: 100% }
-</style>*/ -->
 <div ui-view ng-controller="PortfolioController">
   <div class="container">
-    <div class="row">
-        <a href="#"><h1 class="font-effect-anaglyph">Michelle Jolliffe</h1></a>
-        <h2>graphic designer + web developer</h2>
-    </div>
-  </div>
-  <div class="container">
+    <h1>projects</h1>
     <div class="row buttons">
       <input type="button" name="" value="all" ng-click="categories=''">
       <input type="button" name="" value="web" ng-click="categories={web: true}">
@@ -17,9 +8,8 @@
       <input type="button" name="" value="print" ng-click="categories={print: true}">
     </div>
   </div>
-  <div class="container" id="entries">
+  <div class="container">
     <div class="row">
-       <!-- <div ng-repeat="project in vm.projects | filter:categories" class="entry" id="transition-hover" ng-style="{'background-image': 'url({{project.image}})'}" ng-click="changeState()" ui-sref-active="active" ui-sref="project/{{project.id}}"> -->
       <a ng-repeat="project in projects | filter:categories" class="entry col-md-4" id="transition-hover" ng-style="{'background-image': 'url({{project.image}})'}" ng-href="#/portfolio/{{project.id}}">
         <h3 id="transition-hover-content">{{project.name}}</h3>
       </a>
@@ -38,7 +28,7 @@
       </div>
       <div class="col-md-4 center info">
         <p>For inquiries, please email me at:</p>
-        <a href="mailto:mjolliffecasas@gmail.com"><p>mjolliffecasas@gmail.com</p></a>
+        <a href="mailto:hola@michelle-jolliffe.com"><p>hola@michelle-jolliffe.com</p></a>
         <a href="https://www.linkedin.com/in/michellejolliffe" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
         <a href="https://github.com/mjolliffe" target="_blank"><i class="fa fa-github-square fa-4x"></i></a>
         <a href="https://www.instagram.com/michellejolliffe/" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>

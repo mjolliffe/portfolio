@@ -51,10 +51,25 @@ table {
   box-sizing: border-box; }
 
 body {
-  padding-top: 50px;
   font-family: "Nixie One", cursive;
   overflow: scroll !important;
-  height: 100%; }
+  height: 100%;
+  margin: 0 auto; }
+
+#hello {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eda9c4; }
+
+canvas {
+  top: 0;
+  left: 0;
+  /*width: 100%;*/
+  min-height: 100vh;
+  position: absolute;
+  /*z-index: -1;*/
+  /*overflow: hidden;*/ }
 
 .col-md-12 {
   padding: none; }
@@ -85,7 +100,7 @@ h1 {
   color: #EB006B;
   text-align: center;
   text-decoration: none;
-  margin: 0px 5px; }
+  /*margin: 0px 5px;*/ }
 
 h2 {
   font-family: "Fredoka One", cursive;
@@ -105,14 +120,14 @@ h4 {
   font-family: "Nixie One", cursive;
   font-size: 2em;
   font-weight: 400;
-  color: white;
+  color: #EB006B;
   margin-bottom: 20px;
   text-align: left; }
 
 h5 {
   font-family: "Fredoka One", cursive;
   font-size: 5em;
-  color: white;
+  color: #B1FF4A;
   text-align: center;
   text-decoration: none; }
 
@@ -135,7 +150,7 @@ p {
   line-height: 32px; }
 
 .p {
-  color: white;
+  color: #EB006B;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
@@ -144,6 +159,11 @@ p {
 .row {
   margin: 0 auto;
   text-align: center; }
+
+#greeting {
+  text-align: center;
+  z-index: 10;
+  position: absolute; }
 
 .row#align-left {
   margin: 0 auto;
@@ -160,6 +180,9 @@ p {
   margin: 5.5px;
   display: inline-table;
   white-space: pre-line; }
+
+#entries {
+  height: 100vh; }
 
 #pink-banner {
   background-color: #EB006B;

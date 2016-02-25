@@ -65,10 +65,27 @@ $dark-green: #77AB31;
 }
 
 body {
-  padding-top: 50px;
   font-family: $secondary;
   overflow: scroll !important;
   height: 100%;
+  margin: 0 auto;
+}
+
+#hello {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $light-pink;
+}
+
+canvas {
+  top: 0;
+  left: 0;
+  /*width: 100%;*/
+  min-height: 100vh;
+  position: absolute;
+  /*z-index: -1;*/
+  /*overflow: hidden;*/
 }
 
 .col-md-12 {
@@ -106,7 +123,7 @@ h1 {
   color: $pink;
   text-align: center;
   text-decoration: none;
-  margin: 0px 5px;
+  /*margin: 0px 5px;*/
 }
 
 h2 {
@@ -129,7 +146,7 @@ h4 {
   font-family: $secondary;
   font-size: 2em;
   font-weight: 400;
-  color: white;
+  color: $pink;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -137,7 +154,7 @@ h4 {
 h5 {
   font-family: $primary;
   font-size: 5em;
-  color: white;
+  color: $green;
   text-align: center;
   text-decoration: none;
 }
@@ -164,7 +181,7 @@ p {
 }
 
 .p {
-  color: white;
+  color: $pink;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
@@ -176,10 +193,17 @@ p {
   text-align: center;
 }
 
+#greeting {
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+}
+
 .row#align-left {
   margin: 0 auto;
   text-align: left;
 }
+
 .buttons {
   margin: 2% 38%;
   text-align: center;
@@ -192,6 +216,10 @@ p {
   margin: 5.5px;
   display: inline-table;
   white-space: pre-line;
+}
+
+#entries {
+  height: 100vh;
 }
 
 #pink-banner {
