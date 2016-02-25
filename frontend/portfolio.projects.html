@@ -1,0 +1,33 @@
+<div ui-view id="entries">
+  <div class="container" ng-controller="ProjectsController" class="spacer">
+    <div class="row">
+      <div class="col-md-1 middle">
+        <a ng-href="#/portfolio/{{project.id}}" ng-click="goBack()"><div ng-show="project.id != 0"><h5>-</h5></div></a>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 center">
+        <div ng-controller="CarouselController">
+          <div style="height: 100%">
+            <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+              <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+              </uib-slide>
+            </uib-carousel>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <h4>{{project.name}}</h4>
+        <p class="p">{{project.description}}</p>
+        <div class="row" id="align-left">
+        <h6 ng-repeat="i in technology" style="display:inline-table">{{i}}</h6>
+        <a href="{{project.url}}" target="_blank" ng-show="project.url"><h6 id="pink" style="display:inline-table">Website</h6></a>
+        <a href="{{project.github}}" target="_blank" ng-show="project.github"><h6 id="green" style="display:inline-table">GitHub</h6></a>
+        </div>
+        <!-- <iframe ng-src="{{project.gif}}" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+      </div>
+      <div class="col-md-1 middle">
+        <a ng-href="#/portfolio/{{project.id}}" ng-click="goNext()"><div ng-show="project.id != 13"><h5>+</h5></div></a>
+      </div>
+    </div>
+  </div>
+</div>
