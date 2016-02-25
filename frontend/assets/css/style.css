@@ -51,21 +51,58 @@ table {
   box-sizing: border-box; }
 
 body {
-  padding-top: 50px;
   font-family: "Nixie One", cursive;
   overflow: scroll !important;
-  height: 100%; }
+  height: 100%;
+  margin: 0 auto; }
+
+/*
+canvas {
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+*/
+.container {
+  padding: none; }
+
+hr {
+  color: #B1FF4A;
+  border: 3px solid #B1FF4A;
+  margin-top: 40px; }
+
+.col-md-12 {
+  padding: none; }
+
+.col-xs-12 {
+  padding: none; }
 
 .center {
   margin: 0 auto;
   text-align: center; }
+
+.middle {
+  margin: 10px auto;
+  text-align: center; }
+
+.image {
+  max-width: 274px; }
+
+.arrow {
+  color: #B1FF4A;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  margin-top: 40px; }
 
 h1 {
   font-family: "Fredoka One", cursive;
   font-size: 5.25em;
   color: #EB006B;
   text-align: center;
-  margin: 0px 5px; }
+  text-decoration: none;
+  /*margin: 0px 5px;*/ }
 
 h2 {
   font-family: "Fredoka One", cursive;
@@ -81,13 +118,76 @@ h3 {
   text-align: center;
   margin-top: 50%; }
 
+h4 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2em;
+  font-weight: 400;
+  color: #EB006B;
+  margin-bottom: 20px;
+  text-align: left; }
+
+h5 {
+  font-family: "Fredoka One", cursive;
+  font-size: 5em;
+  color: #B1FF4A;
+  text-align: center;
+  text-decoration: none; }
+
+h6 {
+  font-family: "Nixie One", cursive;
+  font-size: 18px;
+  color: white;
+  background-color: #3685BF;
+  padding: 12px 5px;
+  margin: 10px 5px 10px 0px;
+  text-align: left; }
+
+h6#pink {
+  background-color: #EB006B;
+  max-width: 82px; }
+
+h6#green {
+  background-color: #77AB31;
+  max-width: 82px; }
+
 p {
   color: white;
   font-size: 18px;
   line-height: 32px; }
 
+.p {
+  color: #3685BF;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 10px; }
+
 .row {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center;
+  /*width: 100%*/ }
+
+#hello {
+  /*position: relative;*/
+  width: 100%;
+  margin: 40px auto;
+  /*overflow: hidden;*/
+  /*min-height: 100vh;*/
+  /*text-align: center;*/
+  /*border: 1px solid black;*/
+  /*  background-color: $light-pink;
+*/ }
+
+#greeting {
+  text-align: center;
+  margin: 0 auto;
+  z-index: 10;
+  /*  position: absolute;
+*/ }
+
+.row#align-left {
+  margin: 0 auto;
+  text-align: left; }
 
 .buttons {
   margin: 2% 38%;
@@ -97,16 +197,36 @@ p {
   width: 274px;
   height: 274px;
   font-family: "Fredoka One", cursive;
-  /*  float: left;*/
-  margin: 5px;
+  margin: 5.5px;
+  display: inline-table;
   white-space: pre-line; }
 
-#banner {
+#entries {
+  height: 100vh;
+  padding-top: 100px; }
+
+#pink-banner {
   background-color: #EB006B;
   color: white;
   width: 100%;
   padding: 30px;
   margin-top: 50px; }
+
+#overlay-banner {
+  background-color: #77AB31;
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+  /*  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  transition:.5s;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 20s;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;*/ }
 
 #headshot {
   width: 274px;
@@ -122,12 +242,58 @@ p {
   -moz-transition: .5s;
   -o-transition: .5s;
   -ms-transition: .5s;
-  transition: .5s; }
+  transition: .5s;
+  -webkit-animation-name: example;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 20s;
+  /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+  0% {
+    background-color: #EB006B; }
+  20% {
+    background-color: #eda9c4; }
+  40% {
+    background-color: #B1FF4A; }
+  60% {
+    background-color: #77AB31; }
+  80% {
+    background-color: #3685BF; }
+  100% {
+    background-color: #EB006B; } }
+
+/* Standard syntax */
+@keyframes example {
+  0% {
+    background-color: #EB006B; }
+  20% {
+    background-color: #eda9c4; }
+  40% {
+    background-color: #B1FF4A; }
+  60% {
+    background-color: #77AB31; }
+  80% {
+    background-color: #3685BF; }
+  100% {
+    background-color: #EB006B; } }
 
 #transition-hover:hover #transition-hover-content {
   opacity: 1; }
 
+a:active {
+  text-decoration: none; }
+
 a:hover {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:link {
   text-decoration: none; }
 
 input {
@@ -135,7 +301,9 @@ input {
   background: none;
   border: none;
   padding: 5px;
-  font-size: 24px; }
+  font-family: "Fredoka One", cursive;
+  font-size: 24px;
+  color: #77AB31; }
 
 input:hover {
   color: #B1FF4A; }

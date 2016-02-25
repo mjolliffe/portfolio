@@ -4,157 +4,215 @@ angular.module('Portfolio')
   var service = {}
   service.projects = [
     {
-      "id": 1,
+      "id": 0,
       "name": "Parkeez Visual Identity + Website",
       "image": "assets/images/parkeez.png",
+      "photos":[{image: "assets/images/create.jpg", description:""},
+                {image: "assets/images/create2.jpg", description:""},
+                {image: "assets/images/create3.jpg", description:""}],
       "date": 2016,
-      "description": "",
+      "description": "Parkeez is a parking app developed to help drivers know when and where they can park without fear of ticketing or towing. The app crowdsources its data from local users. The visual identity for Parkeez was inspired by the slow loris whose eyes resemble the look of Angelinos face when he or she finds a parking ticket on their windshield.",
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["JavaScript", "HTML5", "SaSS"]
+      "technology": ["MongoDB", "Express", "NodeJS", "JavaScript", "Google API", "HTML5", "SaSS", "Bootstrap"],
+      "url": "http://parkeez.herokuapp.com",
+      "github": "http://parkeez.herokuapp.com"
+    },
+    {
+      "id": 1,
+      "name": "Aleph Bet - Hebrew Alphabet Learning Game",
+      "image": "assets/images/alephbet.gif",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
+      "date": 2015,
+      "description": "This interactive game allows Hebrew learners to face off against each other in a race to identify the most Hebrew characters possible before time runs out.",
+      "web": true,
+      "design": true,
+      "print": false,
+      "technology": ["JavaScript", "jQuery", "HTML5", "SaSS"],
+      "url": "http://aleph-bet.bitballoon.com/",
+      "github": "http://parkeez.herokuapp.com"
     },
     {
       "id": 2,
-      "name": "Aleph Bet - Hebrew Alphabet Learning Game",
-      "image": "assets/images/aleph.png",
+      "name": "Cascade Brewing Visual Identity",
+      "image": "assets/images/cascade.png",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "",
-      "web": true,
+      "description": "This experiment in identity re-design is meant to transform the look of a well-established brewery located in the Pacific Northwest. Cascade Brewing is best-known for its fruit-forward sour beer concoctions. Student Project.",
+      "web": false,
       "design": true,
-      "print": false,
-      "technology": ["JavaScript", "HTML5", "SaSS"]
+      "print": true,
+      "technology": ["Adobe Illustrator", "Adobe Photoshop"]
     },
     {
       "id": 3,
-      "name": "Cascade Brewing Visual Identity",
-      "image": "assets/images/Beer.jpg",
+      "name": "Milky Web Poster",
+      "image": "assets/images/milkyweb.jpg",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "Re-design created for a well-established brewery located in the Pacific Northwest. Cascade Brewing is best-known for its fruit-forward sour beer concoctions. Student Project.",
+      "description": "“The Milky Web” is a project created to comment on the movement of society towards rearing children raised, from birth, in a tech-heavy world. In extreme cases children are given technology instead of personal attention. Poster printed on Paper. 90cm x 128cm.",
       "web": false,
       "design": true,
-      "print": true
+      "print": true,
+      "technology": ["Adobe Illustrator", "Adobe Photoshop"]
     },
     {
       "id": 4,
-      "name": "Milky Web Poster",
-      "image": "assets/images/milkyweb.jpg",
+      "name": "Mishima Concert Poster",
+      "image": "assets/images/mishima.jpg",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "Poster printed on Paper. 90cm x 128cm. 2015. “The Milky Web” is a project created to comment on the movement of society towards rearing children raised, from birth, in a tech-heavy world. In extreme cases children are given technology instead of personal attention.",
+      "description": "This poster is a conceptual design for Catalan alt-rock band Mishima's performance in a Gaudi building in Barcelona, Catalunya, Spain. Poster printed on Paper. 90cm x 128 cm.",
       "web": false,
       "design": true,
-      "print": true
+      "print": true,
+      "technology": ["Adobe Illustrator", "Adobe Photoshop"]
     },
     {
       "id": 5,
-      "name": "Mishima Concert Poster",
-      "image": "assets/images/mishima.jpg",
+      "name": "CREATE Poster",
+      "image": "assets/images/create.jpg",
+      "photos":[{image: "assets/images/create2.jpg", description:""},
+                {image: "assets/images/create3.jpg", description:""},
+                {image: "assets/images/create4.jpg", description:""}],
       "date": 2015,
-      "description": "Concert Poster printed on Paper. 90cm x 128 cm. Designed for Catalan alt-rock band performance held in Barcelona, Catalunya, Spain. Student Project. ",
+      "description": "“CREATE” is a work of postive propoganda which emphasizes the importance of bringing ideas to life instead of just leaving them on paper or in your head. As designers and artists, we spend a lot of time pouring over concepts when we should probably be getting to work. Without action there is no art. Poster printed on Cloth. 60cm x 100 cm.",
       "web": false,
       "design": true,
-      "print": true
+      "print": true,
+      "technology": ["Adobe Illustrator", "Adobe Photoshop"]
     },
     {
       "id": 6,
-      "name": "Create Poster",
-      "image": "assets/images/create.jpg",
+      "name": "Palette Website",
+      "image": "assets/images/palette.png",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "Positive Propaganda printed on Cloth. 60cm x 100 cm. Created emphasize the importance of bringing ideas to life instead of just leaving them as ideas. Designers and artists spend a lot of time pouring over their concepts when they should probably be getting to work. Without action there is no art.",
-      "web": false,
+      "description": "Palette is a place for creatives to post and sign up for art, design, and craft-centered classes. These classes support artists and designers who want to supplement their income by allowing them to create classes and workshops around their schedules while providing the community at large with a chance to explore new crafts.",
+      "web": true,
       "design": true,
-      "print": true
+      "print": false,
+      "technology": ["Ruby", "Rails", "jQuery","HTML5", "CSS3", "SaSS", "Bootstrap"],
+      "url": "https://palette-application.herokuapp.com/",
+      "github": "http://parkeez.herokuapp.com"
     },
     {
       "id": 7,
-      "name": "Palette Website",
-      "image": "assets/images/palette.png",
-      "date": 2015,
-      "description": "",
-      "web": true,
+      "name": "Design Questions Visual Identity",
+      "image": "assets/images/design.png",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
+      "date": 2016,
+      "description": "This logo was developed for a private project that is currently in the works. The idea behind Design Questions is to create a virtual space in which to pose different questions related to graphic design. Questions will be answered by an expert in the topic and then opened up to discussion in the design community at large.",
+      "web": false,
       "design": true,
-      "print": false
+      "print": false,
+      "technology": ["Adobe Illustrator"]
     },
     {
       "id": 8,
-      "name": "Design Questions Visual Identity + Website",
-      "image": "assets/images/design.png",
-      "date": 2016,
-      "description": "",
-      "web": true,
-      "design": true,
-      "print": false
-    },
-    {
-      "id": 14,
       "name": "Calligraphy Series",
       "image": "assets/images/neruda.jpg",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "",
+      "description": "This calligraphy series is a passion project meant to pull me away from my digital life in order to reconnect with the physical. The art of calligraphy places a heightened awareness on physical space and movement. I use it as a distraction and an outlet.",
       "web": false,
       "design": true,
-      "print": true
+      "print": true,
+      "technology": false
     },
     {
-      "id": 12,
+      "id": 9,
       "name": "Baja California Real Estate Visual Identities",
       "image": "assets/images/torza.png",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "",
+      "description": "These logos were created for modern, seaside, luxury real estate developments located in Baja California, Mexico. The living spaces in Privada del Mar are more relaxed and elegant while those at Real Mediterraneo are more modern and structrual.",
       "web": false,
       "design": true,
-      "print": false
+      "print": false,
+      "technology": ["Adobe Illustrator"]
     },
     {
-      "id": 13,
+      "id": 10,
       "name": "Asia Travel Book",
-      "image": "assets/images/asia2.png",
+      "image": "assets/images/asia.png",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "",
+      "description": "This book is a personal project meant to document my journey through Asia via text and image. Project done in collaboration with geologist/photographer Lee M. Saper.",
       "web": false,
       "design": true,
-      "print": true
+      "print": true,
+      "technology": ["Adobe InDesign", "Adobe Illustrator", "Adobe Photoshop"]
     },
     {
       "id": 11,
       "name": "TreeStack Visual Identity",
       "image": "assets/images/treestack.png",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "",
+      "description": "This logo was created for a tech startup focused on media and web design. The company was looking for a modern, simple logo that acknowledged their focus on clean, sophisticated programming.",
       "web": false,
       "design": true,
-      "print": false
+      "print": false,
+      "technology": ["Adobe Illustrator"]
     },
     {
-      "id": 9,
+      "id": 12,
       "name": "Providence Granola Project Packaging",
       "image": "assets/images/nuts.png",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
-      "description": "",
+      "description": "Package label design developed for Providence Granola Project’s new line of spiced nuts. PGP is a nonprofit that helps train and educate refugees from around the world.",
       "web": false,
       "design": true,
-      "print": false
+      "print": false,
+      "technology": ["Adobe Illustrator"]
     },
     {
-      "id": 10,
+      "id": 13,
       "name": "10 Principles of Design Website",
       "image": "assets/images/dieter.jpg",
+      "image2":"assets/images/",
+      "image3":"assets/images/",
       "date": 2015,
       "description": "Customized website created to promote Dieter Rams' 10 Principles for Good Design. The website is meant to be simple, direct, and user-friendly.",
-      "web": false,
+      "web": true,
       "design": true,
-      "print": false
+      "print": false,
+      "technology": ["HTML5", "CSS3"],
+      "url": "",
+      "github": "http://parkeez.herokuapp.com"
+    },
+    {
+      "id": 14,
+      "name": "FontGen Website",
+      "image": "assets/images/fontgen_small.gif",
+      "photos":[{image: "assets/images/create.jpg", description:""},
+                {image: "assets/images/create2.jpg", description:""},
+                {image: "assets/images/create3.jpg", description:""}],
+      "date": 2016,
+      "description": "FontGen is an experiment in visual play via the art of font pairing. FontGen was created with typography enthusiasts, web developers, and designers in mind. FontGen's goal is to allow users to discover and save font pairs they love without having to scroll through thousands of type specimens. FontGen was built as a full MEAN-stack application.",
+      "web": true,
+      "design": true,
+      "print": false,
+      "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "HTML5", "SaSS", "Bootstrap", "ThreeJS"],
+      "url": "http://parkeez.herokuapp.com",
+      "github": "http://parkeez.herokuapp.com"
     }
   ];
 
-  // service.ids = getId(service.projects, 'id');
-
   return service;
 
-  // function getId(project){
-  //   var id = {}
-  //   project.forEach
-
-  //   return id
-  // }
 });

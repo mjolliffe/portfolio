@@ -8,17 +8,23 @@ angular
 AppRoutes.$inject = ["$stateProvider", "$urlRouterProvider"];
 
 function AppRoutes($stateProvider, $urlRouterProvider){
+  $urlRouterProvider.when("", "/portfolio");
+  $urlRouterProvider.when("/", "/portfolio");
+
   $stateProvider
     .state('portfolio', {
-      url:'/',
+      url:'/portfolio',
       templateUrl: 'portfolio.html',
-      controller: 'ProjectController'
+      controller: 'PortfolioController'
     })
-    .state('project', {
-      url:'/project/:id',
+    .state('portfolio.projects', {
+      url:'/:id',
       params: {project: null},
-      templateUrl:'project.html',
-      controller: 'ProjectController'
+      templateUrl:'portfolio.projects.html'
+      // controller: 'ProjectsController'
+      // controller: function($scope, $stateParams){
+      //   $scope.project = $scope.projects[$stateParams.id]
+      // }
       // controller: function($stateParams){
       //   console.log($stateParams)
       //   // console.log(project)
