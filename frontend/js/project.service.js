@@ -16,7 +16,8 @@ angular.module('Portfolio')
       "design": true,
       "print": false,
       "technology": ["MongoDB", "Express", "NodeJS", "JavaScript", "Google API", "HTML5", "SaSS", "Bootstrap"],
-      "url": "http://parkeez.herokuapp.com"
+      "url": "http://parkeez.herokuapp.com",
+      "github": "http://parkeez.herokuapp.com"
     },
     {
       "id": 1,
@@ -30,7 +31,8 @@ angular.module('Portfolio')
       "design": true,
       "print": false,
       "technology": ["JavaScript", "jQuery", "HTML5", "SaSS"],
-      "url": "http://aleph-bet.bitballoon.com/"
+      "url": "http://aleph-bet.bitballoon.com/",
+      "github": "http://parkeez.herokuapp.com"
     },
     {
       "id": 2,
@@ -97,7 +99,8 @@ angular.module('Portfolio')
       "design": true,
       "print": false,
       "technology": ["Ruby", "Rails", "jQuery","HTML5", "CSS3", "SaSS", "Bootstrap"],
-      "url": "https://palette-application.herokuapp.com/"
+      "url": "https://palette-application.herokuapp.com/",
+      "github": "http://parkeez.herokuapp.com"
     },
     {
       "id": 7,
@@ -189,7 +192,8 @@ angular.module('Portfolio')
       "design": true,
       "print": false,
       "technology": ["HTML5", "CSS3"],
-      "url": ""
+      "url": "",
+      "github": "http://parkeez.herokuapp.com"
     },
     {
       "id": 14,
@@ -203,9 +207,10 @@ angular.module('Portfolio')
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "HTML5", "SaSS", "Bootstrap"],
-      "url": "http://parkeez.herokuapp.com"
-    },
+      "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "HTML5", "SaSS", "Bootstrap", "ThreeJS"],
+      "url": "http://parkeez.herokuapp.com",
+      "github": "http://parkeez.herokuapp.com"
+    }
   ];
 
   return service;

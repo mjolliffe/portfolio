@@ -20,8 +20,8 @@ function AppRoutes($stateProvider, $urlRouterProvider){
     .state('portfolio.projects', {
       url:'/:id',
       params: {project: null},
-      templateUrl:'portfolio.projects.html',
-      controller: 'ProjectsController'
+      templateUrl:'portfolio.projects.html'
+      // controller: 'ProjectsController'
       // controller: function($scope, $stateParams){
       //   $scope.project = $scope.projects[$stateParams.id]
       // }
