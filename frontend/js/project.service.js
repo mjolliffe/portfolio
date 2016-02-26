@@ -32,7 +32,7 @@ angular.module('Portfolio')
       "print": false,
       "technology": ["JavaScript", "jQuery", "HTML5", "SaSS"],
       "url": "http://aleph-bet.bitballoon.com/",
-      "github": "http://parkeez.herokuapp.com"
+      "github": "https://github.com/mjolliffe/aleph-bet-learning-game"
     },
     {
       "id": 2,
@@ -89,18 +89,19 @@ angular.module('Portfolio')
     },
     {
       "id": 6,
-      "name": "Palette Website",
-      "image": "assets/images/palette.png",
-      "image2":"assets/images/",
-      "image3":"assets/images/",
-      "date": 2015,
-      "description": "Palette is a place for creatives to post and sign up for art, design, and craft-centered classes. These classes support artists and designers who want to supplement their income by allowing them to create classes and workshops around their schedules while providing the community at large with a chance to explore new crafts.",
+      "name": "FontGen Website",
+      "image": "assets/images/fontgen_small.gif",
+      "photos":[{image: "assets/images/create.jpg", description:""},
+                {image: "assets/images/create2.jpg", description:""},
+                {image: "assets/images/create3.jpg", description:""}],
+      "date": 2016,
+      "description": "FontGen is an experiment in visual play via the art of font pairing. FontGen was created with typography enthusiasts, web developers, and designers in mind. FontGen's goal is to allow users to discover and save font pairs they love without having to scroll through thousands of type specimens. FontGen was built as a full MEAN-stack application.",
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["Ruby", "Rails", "jQuery","HTML5", "CSS3", "SaSS", "Bootstrap"],
-      "url": "https://palette-application.herokuapp.com/",
-      "github": "http://parkeez.herokuapp.com"
+      "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "HTML5", "SaSS", "Bootstrap", "ThreeJS"],
+      "url": "http://parkeez.herokuapp.com",
+      "github": "https://github.com/mjolliffe/fontgen"
     },
     {
       "id": 7,
@@ -180,36 +181,35 @@ angular.module('Portfolio')
       "print": false,
       "technology": ["Adobe Illustrator"]
     },
+    // {
+    //   "id": 13,
+    //   "name": "10 Principles of Design Website",
+    //   "image": "assets/images/dieter.jpg",
+    //   "image2":"assets/images/",
+    //   "image3":"assets/images/",
+    //   "date": 2015,
+    //   "description": "Customized website created to promote Dieter Rams' 10 Principles for Good Design. The website is meant to be simple, direct, and user-friendly.",
+    //   "web": true,
+    //   "design": true,
+    //   "print": false,
+    //   "technology": ["HTML5", "CSS3"],
+    //   "url": "",
+    //   "github": "https://github.com/mjolliffe/principles-of-design"
+    // },
     {
       "id": 13,
-      "name": "10 Principles of Design Website",
-      "image": "assets/images/dieter.jpg",
+      "name": "Palette Website",
+      "image": "assets/images/palette.png",
       "image2":"assets/images/",
       "image3":"assets/images/",
       "date": 2015,
-      "description": "Customized website created to promote Dieter Rams' 10 Principles for Good Design. The website is meant to be simple, direct, and user-friendly.",
+      "description": "Palette is a place for creatives to post and sign up for art, design, and craft-centered classes. These classes support artists and designers who want to supplement their income by allowing them to create classes and workshops around their schedules while providing the community at large with a chance to explore new crafts.",
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["HTML5", "CSS3"],
-      "url": "",
-      "github": "http://parkeez.herokuapp.com"
-    },
-    {
-      "id": 14,
-      "name": "FontGen Website",
-      "image": "assets/images/fontgen_small.gif",
-      "photos":[{image: "assets/images/create.jpg", description:""},
-                {image: "assets/images/create2.jpg", description:""},
-                {image: "assets/images/create3.jpg", description:""}],
-      "date": 2016,
-      "description": "FontGen is an experiment in visual play via the art of font pairing. FontGen was created with typography enthusiasts, web developers, and designers in mind. FontGen's goal is to allow users to discover and save font pairs they love without having to scroll through thousands of type specimens. FontGen was built as a full MEAN-stack application.",
-      "web": true,
-      "design": true,
-      "print": false,
-      "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "HTML5", "SaSS", "Bootstrap", "ThreeJS"],
-      "url": "http://parkeez.herokuapp.com",
-      "github": "http://parkeez.herokuapp.com"
+      "technology": ["Ruby", "Rails", "jQuery","HTML5", "CSS3", "SaSS", "Bootstrap"],
+      "url": "https://palette-application.herokuapp.com/",
+      "github": "https://github.com/mjolliffe/palette-app"
     }
   ];
 

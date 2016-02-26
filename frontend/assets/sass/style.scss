@@ -66,7 +66,7 @@ $dark-green: #77AB31;
 
 body {
   font-family: $secondary;
-  overflow: scroll !important;
+  /*overflow: scroll !important;*/
   height: 100%;
   margin: 0 auto;
 }
@@ -86,7 +86,7 @@ canvas {
 hr {
   color: $green;
   border: 3px solid $green;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .col-md-12 {
@@ -100,6 +100,10 @@ hr {
 .center {
   margin: 0 auto;
   text-align: center;
+}
+
+.spacer-bottom{
+  margin-bottom: 40px;
 }
 
 .middle {
@@ -172,12 +176,10 @@ h6 {
 
 h6#pink {
   background-color: $pink;
-  max-width: 82px;
 }
 
 h6#green {
   background-color: $dark-green;
-  max-width: 82px;
 }
 
 
@@ -240,7 +242,7 @@ p {
 
 #entries {
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 #pink-banner {
@@ -326,6 +328,9 @@ a:visited {
 }
 a:link{
   text-decoration: none;
+}
+input:focus{
+  outline: none;
 }
 
 input {
