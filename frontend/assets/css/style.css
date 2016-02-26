@@ -312,6 +312,9 @@ input {
 input:hover {
   color: #B1FF4A; }
 
+.carousel-control {
+  display: none; }
+
 .info {
   padding-top: 30px; }
 

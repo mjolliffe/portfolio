@@ -15,21 +15,6 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
 
   $scope.shown = []
 
-  $scope.lastPhoto = function(index){
-    console.log('hi')
-    // $scope.image = $scope.photos[ index - 1 ];
-    angular.forEach(photos, function(value, key) {
-      $scope.shown.push(value);
-    });
-    console.log($scope.image)
-  }
-
-  $scope.nextPhoto = function(index){
-    console.log('bye')
-    $scope.image = $scope.photos[ index + 1 ];
-    console.log($scope.image)
-  }
-
   $scope.goBack = function (){
     if ($scope.project.id <= 0) {
       $scope.project.id = $scope.project.id
