@@ -2,7 +2,7 @@
   <div class="container" ng-controller="ProjectsController" class="spacer">
     <div class="row">
       <div class="col-md-1 middle">
-        <a ng-href="#/portfolio/{{project.id}}" ng-click="goBack()"><div ng-show="project.id != 0"><h5>-</h5></div></a>
+        <a ng-href="#/portfolio/{{page-1}}"><div ng-show="project.id != 0"><h5>-</h5></div></a>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 center spacer-bottom">
         <div ng-controller="CarouselController">
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="col-md-1 middle">
-        <a ng-href="#/portfolio/{{project.id}}" ng-click="goNext()"><div ng-show="project.id != 13"><h5>+</h5></div></a>
+        <a ng-href="#/portfolio/{{page+1}}"><div ng-show="project.id != 13"><h5>+</h5></div></a>
       </div>
     </div>
   </div>
