@@ -27,7 +27,7 @@ angular.module('Portfolio')
                 {image: "assets/images/create2.jpg", description:""},
                 {image: "assets/images/create3.jpg", description:""}],
       "date": 2015,
-      "description": "This interactive game allows Hebrew learners to face off against each other in a race to identify the most Hebrew characters possible before time runs out.",
+      "description": "This interactive game pits learners of the Hebrew alphabet (aka alephbet) against each other in a race to identify the most Hebrew characters possible before time runs out.",
       "web": true,
       "design": true,
       "print": false,

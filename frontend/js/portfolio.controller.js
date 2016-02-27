@@ -7,4 +7,5 @@ function PortfolioController (ProjectData, $state, $stateParams, $scope){
 
   $scope.projects = ProjectData.projects
 
+  // console.log(projects)
 }

@@ -142,14 +142,16 @@ h6 {
   color: white;
   background-color: #3685BF;
   padding: 12px 5px;
-  margin: 10px 5px 10px 0px;
-  text-align: left; }
+  text-align: left;
+  display: inline-block; }
 
 h6#pink {
-  background-color: #EB006B; }
+  background-color: #EB006B;
+  margin: 10px 5px 10px 0px; }
 
 h6#green {
-  background-color: #77AB31; }
+  background-color: #77AB31;
+  margin: 10px 5px 10px 0px; }
 
 p {
   color: white;
@@ -159,7 +161,7 @@ p {
 .p {
   color: #3685BF;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 26px;
   text-align: left;
   margin-bottom: 10px; }
 

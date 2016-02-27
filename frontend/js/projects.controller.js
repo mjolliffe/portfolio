@@ -13,24 +13,23 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
 
   $scope.photos = $scope.project.photos
 
-  $scope.shown = []
-
   $scope.goBack = function (){
     if ($scope.project.id <= 0) {
-      $scope.project.id = $scope.project.id
+      $state.go('portfolio.projects', {project: $scope.project.id})
     } else {
-      $scope.project.id = $scope.project.id-=1
+      $state.go('portfolio.projects', {project: $scope.project.id-=1})
     }
   }
 
   $scope.goNext = function (){
     if ($scope.project.id >= 13) {
-      $scope.project.id = $scope.project.id
+      $state.go('portfolio.projects', {project: $scope.project.id})
       $scope.show = false
     } else {
-      $scope.project.id = $scope.project.id+=1
+      $state.go('portfolio.projects', {project: $scope.project.id+=1})
       $scope.show = true
     }
   }
 
+  console.log($scope.project.id)
 }

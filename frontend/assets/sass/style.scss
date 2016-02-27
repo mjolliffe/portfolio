@@ -170,18 +170,19 @@ h6 {
   color: white;
   background-color: $blue;
   padding: 12px 5px;
-  margin: 10px 5px 10px 0px;
   text-align: left;
+  display: inline-block;
 }
 
 h6#pink {
   background-color: $pink;
+  margin: 10px 5px 10px 0px;
 }
 
 h6#green {
   background-color: $dark-green;
+  margin: 10px 5px 10px 0px;
 }
-
 
 p {
   color: white;
@@ -192,7 +193,7 @@ p {
 .p {
   color: $blue;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 26px;
   text-align: left;
   margin-bottom: 10px;
 }
