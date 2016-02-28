@@ -6,10 +6,10 @@
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 center spacer-bottom">
         <div ng-controller="CarouselController">
-          <div style="height: 400px">
+          <div>
             <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
               <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
-                <img ng-src="{{slide.image}}" style="margin:auto;">
+                <img ng-src="{{slide.image}}" style="margin:auto; max-height: 400px">
               </uib-slide>
             </uib-carousel>
           </div>
