@@ -36,18 +36,36 @@
   </header>
   <main>
   <div class="container">
-    <div class="animation-greeting center">
-        <div class="row buttons">
-          <a href="#/portfolio"><input type="button" name="" value="work"></a>
-          <a href="#/about"><input type="button" name="" value="about" ng-click=""></a>
-        </div>
+    <div class="row" id="spacer-top">
+      <div class="col-md-12">
+        <a href="#/portfolio"><img src="assets/images/icon.png" alt="" class="icon"></a>
+      </div>
+    </div>
+    <div class="row spacer-top">
+      <div class="col-md-12">
+        <a href="#/portfolio"><input type="button" name="" value="work" class="home-input"></a>
+        <a href="#/about"><input type="button" name="" value="about" class="home-input"></a>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <div id="hello">
+  <!-- <div class="container">
+    <div class="row animation-greeting center">
+    </div>
+    <div class="row">
+      <a href="#/portfolio"><h1>Michelle Jolliffe</h1></a>
+      <h2>graphic designer + web developer</h2>
+    </div>
+    <div class="row">
+      <a href="#/portfolio"><input type="button" name="" value="work" class="home-input"></a>
+      <a href="#/about"><input type="button" name="" value="about" class="home-input"></a>
+    </div>
+    <hr>
+  </div> -->
+<!--   <div class="container">
+    <div id="hello"> -->
 <!--       <div ng-controller="CanvasController" ng-init="load()">
       </div> -->
-      <div id="greeting" ng-controller="PortfolioController">
+<!--       <div id="greeting" ng-controller="PortfolioController">
         <a href="#/portfolio"><h1>Michelle Jolliffe</h1></a>
         <h2>graphic designer + web developer</h2>
         <div class="row buttons">
@@ -55,9 +73,9 @@
         <a href="#/about"><input type="button" name="" value="about" ng-click=""></a>
         </div>
         <hr>
-      </div>
-    </div>
-  </div>
+      </div> -->
+<!--     </div>
+  </div> -->
   <div ui-view>
   </div>
   </main>

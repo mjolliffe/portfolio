@@ -67,9 +67,9 @@ angular.module('Portfolio')
       "id": 4,
       "name": "Mishima Concert Poster",
       "image": "assets/images/mishima.jpg",
-      "slides":[{image: "assets/images/create.jpg", description:""},
-                {image: "assets/images/create2.jpg", description:""},
-                {image: "assets/images/create3.jpg", description:""}],
+      "slides":[{image: "assets/images/mishima1.jpg", description:""},
+                {image: "assets/images/mishima5.jpg", description:""},
+                {image: "assets/images/mishima2.jpg", description:""}],
       "date": 2015,
       "description": "This poster is a conceptual design for Catalan alt-rock band Mishima's performance in a Gaudi building in Barcelona, Catalunya, Spain. Poster printed on Paper. 90cm x 128 cm.",
       "web": false,
@@ -104,7 +104,7 @@ angular.module('Portfolio')
       "design": true,
       "print": false,
       "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "HTML5", "SaSS", "Bootstrap", "ThreeJS"],
-      "url": "http://parkeez.herokuapp.com",
+      "url": "http://fontgen.s3-website-us-west-2.amazonaws.com/#/",
       "github": "https://github.com/mjolliffe/fontgen"
     },
     {

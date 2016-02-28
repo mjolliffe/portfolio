@@ -53,7 +53,6 @@ $secondary: 'Nixie One', cursive;
 $light-pink: #eda9c4;
 $pink: #EB006B;
 $green: #B1FF4A;
-$yellow: #F4D916;
 $blue: #3685BF;
 $dark-green: #77AB31;
 
@@ -99,6 +98,10 @@ hr {
 .center {
   margin: 0 auto;
   text-align: center;
+}
+
+.spacer-top {
+   margin-top: 40px;
 }
 
 .spacer-bottom{
@@ -197,20 +200,47 @@ p {
   margin-bottom: 10px;
 }
 
+.icon {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .row {
   margin: 0 auto;
   text-align: center;
 }
 
+.row#spacer-top {
+  margin: 40px auto;
+  text-align: left;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  font-family: $primary;
+  color: $pink;
+  font-size: 1.2em;
+}
+
+#col-align-left {
+  text-align: left;
+}
+
+#col-align-right {
+  text-align: right;
+}
+
 .animation-greeting {
   min-height: 100vh;
   width: 100%;
-  display: inline-block;
-  /*background: $pink;*/
-  animation: pulse 10s infinite;
+  /*display: inline-block;*/
+  /*animation: pulse 8s ease;*/
+  background: $pink url('../images/m-07.png') no-repeat center;
 }
 
-@keyframes pulse {
+/*@keyframes pulse {
   0% {
     background: $pink url('../images/m-01.png') no-repeat center;
   }
@@ -232,89 +262,13 @@ p {
   100% {
     background: $pink url('../images/m-07.png') no-repeat center;
   }
-}
-
-
-/*span {
-  font-family: $primary;
-  font-size: 12em;
-  width: 100%;
-  display: inline-block;
-  animation: flyDown 18s linear 0s;
-  height: 100%
-}
-
-#span-seven {
-  color: $green;
-  position: relative;
-  top: 0px;
-  animation-delay: 18s;
-}
-
-#span-six {
-  color: $dark-green;
-  position: relative;
-  top: -170px;
-  animation-delay: 15s;
-
-}
-
-#span-five {
-  color: $green;
-  position: relative;
-  top: -340px;
-  animation-delay: 12s;
-
-}
-
-#span-four {
-  color: $dark-green;
-  position: relative;
-  top: -510px;
-  animation-delay: 9s;
-
-}
-
-#span-three {
-  color: $green;
-  position: relative;
-  top: -680px;
-  animation-delay: 6s;
-
-}
-
-#span-two {
-  color: $dark-green;
-  position: relative;
-  top: -850px;
-  animation-delay: 3s;
-
-}
-
-#span-one {
-  color: $green;
-  position: relative;
-  top: -1020px;
-  /*animation-delay: 0s;*/
-/*}*/
-
-#hello {
-  /*position: relative;*/
-  width: 100%;
-  margin: 40px auto;
-  /*overflow: hidden;*/
-  /*min-height: 100vh;*/
-  /*text-align: center;*/
-  /*border: 1px solid black;*/
-/*  background-color: $light-pink;
-*/}
+}*/
 
 #greeting {
   text-align: center;
   margin: 0 auto;
   z-index: 10;
-/*  position: absolute;
-*/}
+}
 
 .row#align-left {
   margin: 0 auto;
@@ -340,11 +294,11 @@ p {
   padding-top: 20px;
 }
 
-#pink-banner {
-  background-color: $pink;
+#green-banner {
+  background-color: $dark-green;
   color: white;
-  width: 100%;
   padding: 30px;
+  margin: 2% 0px;
 }
 
 #overlay-banner {
@@ -357,7 +311,7 @@ p {
 #headshot {
   width: 274px;
   height: 274px;
-  border: 20px inset $green;
+  border: 20px inset $blue;
   border-radius: 50%;
 }
 
@@ -414,6 +368,7 @@ a:visited {
 a:link{
   text-decoration: none;
 }
+
 input:focus{
   outline: none;
 }
@@ -432,12 +387,22 @@ input:hover {
   color: $green;
 }
 
+.home-input {
+  font-size: 3em;
+  color: $blue;
+  padding: 10px;
+}
+
+.home-input:hover {
+  color: $blue;
+}
+
 .carousel-control {
   display: none;
 }
 
 .info {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .fa {
