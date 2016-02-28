@@ -13,7 +13,7 @@ angular.module('Portfolio')
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["MongoDB", "Express", "NodeJS", "JavaScript", "Google API", "HTML5", "SaSS", "Bootstrap"],
+      "technology": ["MongoDB", "Express", "NodeJS", "JavaScript", "Google API", "SaSS", "Bootstrap"],
       "url": "http://parkeez.herokuapp.com",
       "github": "http://parkeez.herokuapp.com"
     },
@@ -27,7 +27,7 @@ angular.module('Portfolio')
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["JavaScript", "jQuery", "HTML5", "SaSS"],
+      "technology": ["JavaScript", "jQuery"],
       "url": "http://aleph-bet.bitballoon.com/",
       "github": "https://github.com/mjolliffe/aleph-bet-learning-game"
     },
@@ -92,7 +92,7 @@ angular.module('Portfolio')
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "HTML5", "SaSS", "Bootstrap", "ThreeJS"],
+      "technology": ["MongoDB", "Express", "Angular", "NodeJS", "JavaScript", "Google Fonts API", "SaSS", "Bootstrap", "ThreeJS"],
       "url": "http://fontgen.s3-website-us-west-2.amazonaws.com/#/",
       "github": "https://github.com/mjolliffe/fontgen"
     },
@@ -193,7 +193,7 @@ angular.module('Portfolio')
       "web": true,
       "design": true,
       "print": false,
-      "technology": ["Ruby", "Rails", "jQuery","HTML5", "CSS3", "SaSS", "Bootstrap"],
+      "technology": ["Ruby", "Rails", "jQuery", "CSS3", "SaSS", "Bootstrap"],
       "url": "https://palette-application.herokuapp.com/",
       "github": "https://github.com/mjolliffe/palette-app"
     }
