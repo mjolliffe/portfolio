@@ -52,7 +52,6 @@ table {
 
 body {
   font-family: "Nixie One", cursive;
-  /*overflow: scroll !important;*/
   height: 100%;
   margin: 0 auto; }
 
@@ -167,14 +166,30 @@ p {
 
 .row {
   margin: 0 auto;
-  text-align: center;
-  /*width: 100%*/ }
+  text-align: center; }
 
 .animation-greeting {
   min-height: 100vh;
-  background: #EB006B;
-  animation: pulse 5s infinite;
-  /*border: 1px solid black;*/ }
+  width: 100%;
+  display: inline-block;
+  /*background: $pink;*/
+  animation: pulse 10s infinite; }
+
+@keyframes pulse {
+  0% {
+    background: #EB006B url("../images/m-01.png") no-repeat center; }
+  15% {
+    background: #EB006B url("../images/m-02.png") no-repeat center; }
+  30% {
+    background: #EB006B url("../images/m-03.png") no-repeat center; }
+  45% {
+    background: #EB006B url("../images/m-04.png") no-repeat center; }
+  60% {
+    background: #EB006B url("../images/m-05.png") no-repeat center; }
+  75% {
+    background: #EB006B url("../images/m-06.png") no-repeat center; }
+  100% {
+    background: #EB006B url("../images/m-07.png") no-repeat center; } }
 
 /*span {
   font-family: $primary;
@@ -238,22 +253,6 @@ p {
   top: -1020px;
   /*animation-delay: 0s;*/
 /*}*/
-@keyframes pulse {
-  0% {
-    background-image: url("../images/m-01.png"); }
-  15% {
-    background-image: url("../images/m-02.png"); }
-  30% {
-    background-image: url("../images/m-03.png"); }
-  45% {
-    background-image: url("../images/m-04.png"); }
-  60% {
-    background-image: url("../images/m-05.png"); }
-  75% {
-    background-image: url("../images/m-06.png"); }
-  100% {
-    background-image: url("../images/m-07.png"); } }
-
 #hello {
   /*position: relative;*/
   width: 100%;
@@ -302,17 +301,7 @@ p {
   background-color: #77AB31;
   width: 100%;
   padding: 30px;
-  margin-top: 50px;
-  /*  -webkit-transition:.5s;
-  -moz-transition:.5s;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  transition:.5s;
-  -webkit-animation-name: example;
-  -webkit-animation-duration: 20s;
-  animation-name: example;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;*/ }
+  margin-top: 50px; }
 
 #headshot {
   width: 274px;
