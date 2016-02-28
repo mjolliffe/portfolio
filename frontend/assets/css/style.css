@@ -170,6 +170,90 @@ p {
   text-align: center;
   /*width: 100%*/ }
 
+.animation-greeting {
+  min-height: 100vh;
+  background: #EB006B;
+  animation: pulse 5s infinite;
+  /*border: 1px solid black;*/ }
+
+/*span {
+  font-family: $primary;
+  font-size: 12em;
+  width: 100%;
+  display: inline-block;
+  animation: flyDown 18s linear 0s;
+  height: 100%
+}
+
+#span-seven {
+  color: $green;
+  position: relative;
+  top: 0px;
+  animation-delay: 18s;
+}
+
+#span-six {
+  color: $dark-green;
+  position: relative;
+  top: -170px;
+  animation-delay: 15s;
+
+}
+
+#span-five {
+  color: $green;
+  position: relative;
+  top: -340px;
+  animation-delay: 12s;
+
+}
+
+#span-four {
+  color: $dark-green;
+  position: relative;
+  top: -510px;
+  animation-delay: 9s;
+
+}
+
+#span-three {
+  color: $green;
+  position: relative;
+  top: -680px;
+  animation-delay: 6s;
+
+}
+
+#span-two {
+  color: $dark-green;
+  position: relative;
+  top: -850px;
+  animation-delay: 3s;
+
+}
+
+#span-one {
+  color: $green;
+  position: relative;
+  top: -1020px;
+  /*animation-delay: 0s;*/
+/*}*/
+@keyframes pulse {
+  0% {
+    background-image: url("../images/m-01.png"); }
+  15% {
+    background-image: url("../images/m-02.png"); }
+  30% {
+    background-image: url("../images/m-03.png"); }
+  45% {
+    background-image: url("../images/m-04.png"); }
+  60% {
+    background-image: url("../images/m-05.png"); }
+  75% {
+    background-image: url("../images/m-06.png"); }
+  100% {
+    background-image: url("../images/m-07.png"); } }
+
 #hello {
   /*position: relative;*/
   width: 100%;
@@ -212,8 +296,7 @@ p {
   background-color: #EB006B;
   color: white;
   width: 100%;
-  padding: 30px;
-  margin-top: 50px; }
+  padding: 30px; }
 
 #overlay-banner {
   background-color: #77AB31;

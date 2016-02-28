@@ -14,22 +14,19 @@ function AppRoutes($stateProvider, $urlRouterProvider){
   $stateProvider
     .state('portfolio', {
       url:'/portfolio',
-      templateUrl: 'portfolio.html',
-      controller: 'PortfolioController'
+      templateUrl:  'portfolio.html',
+      controller:   'PortfolioController'
     })
     .state('portfolio.projects', {
       url:'/:id',
       params: {project: null},
-      templateUrl:'portfolio.projects.html'
-      // controller: 'ProjectsController'
-      // controller: function($scope, $stateParams){
-      //   $scope.project = $scope.projects[$stateParams.id]
-      // }
-      // controller: function($stateParams){
-      //   console.log($stateParams)
-      //   // console.log(project)
-      //   // project.id = $stateParams.id
-      // }
+      templateUrl:  'portfolio.projects.html',
+      controller:   'ProjectsController'
+    })
+    .state('about', {
+      url:'/about',
+      templateUrl:  'about.html',
+      controller:   'PortfolioController'
     });
     $urlRouterProvider.otherwise('/');
   }
