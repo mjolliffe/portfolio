@@ -23,7 +23,7 @@ angular.module('Portfolio')
       "image": "assets/images/alephbet.gif",
       "slides":[{image: "assets/images/alephbet.gif", description:""}],
       "date": 2015,
-      "description": "This interactive game pits learners of the Hebrew alphabet (aka alephbet) against each other in a race to identify the most Hebrew characters before time runs out.",
+      "description": "This interactive game pits learners of the Hebrew alphabet (aka alephbet) against each other in a race to identify the most characters before time runs out.",
       "web": true,
       "design": true,
       "print": false,

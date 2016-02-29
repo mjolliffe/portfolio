@@ -46,7 +46,7 @@ table {
 
 /* typography */
 $primary:'Fredoka One', cursive;
-$secondary: 'Nixie One', cursive;
+$secondary: 'Lato', sans-serif;
 
 /* colors */
 
@@ -81,13 +81,11 @@ canvas {
   padding: none;
 }
 
-hr {
-  color: $green;
-  border: 3px solid $green;
-  margin-top: 60px;
+.col-md-12 {
+  padding: none;
 }
 
-.col-md-12 {
+.col-sm-12 {
   padding: none;
 }
 
@@ -108,21 +106,23 @@ hr {
   margin-bottom: 40px;
 }
 
-.middle {
-  margin: 10px auto;
-  text-align: center;
+hr {
+  color: $green;
+  border: 3px solid $green;
+  margin-top: 60px;
 }
 
+/* images */
 .image {
   max-width: 274px;
 }
 
-.arrow {
+/*.arrow {
   color: $green;
   font-family: $primary;
   font-size: 30px;
   margin-top: 40px;
-}
+}*/
 
 h1 {
   font-family: $primary;
@@ -164,6 +164,8 @@ h5 {
   color: $green;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
+  padding: 0px 15px;
 }
 
 h6 {
@@ -171,9 +173,10 @@ h6 {
   font-size: 18px;
   color: white;
   background-color: $blue;
-  padding: 12px 5px;
+  padding: 12px 8px;
   text-align: left;
   display: inline-block;
+  -webkit-appearance: none;
 }
 
 h6#pink {
@@ -195,15 +198,30 @@ p {
 .p {
   color: $blue;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 28px;
   text-align: left;
   margin-bottom: 10px;
+}
+
+span {
+  text-decoration: none;
+  list-style: none;
+  font-family: $secondary;
+  color: $blue;
+  font-size: 1.2em;
+  display: inline-block;
+  text-align: left;
+  padding: 10px 10px 10px 0px;
 }
 
 .icon {
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+
+.project {
+  min-height: 100vh;
 }
 
 .row {
@@ -216,12 +234,15 @@ p {
   text-align: left;
 }
 
-li {
+#tech-list {
   text-decoration: none;
   list-style: none;
-  font-family: $primary;
-  color: $pink;
+  font-family: $secondary;
+  color: $blue;
   font-size: 1.2em;
+  display: inline-block;
+  text-align: left;
+  padding: 10px 10px 10px 0px;
 }
 
 #col-align-left {
@@ -402,7 +423,7 @@ input:hover {
 }
 
 .info {
-  padding-top: 10px;
+  padding-top: 24px;
 }
 
 .fa {

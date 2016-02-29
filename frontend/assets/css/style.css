@@ -51,7 +51,7 @@ table {
   box-sizing: border-box; }
 
 body {
-  font-family: "Nixie One", cursive;
+  font-family: "Lato", sans-serif;
   height: 100%;
   margin: 0 auto; }
 
@@ -67,12 +67,10 @@ canvas {
 .container {
   padding: none; }
 
-hr {
-  color: #B1FF4A;
-  border: 3px solid #B1FF4A;
-  margin-top: 60px; }
-
 .col-md-12 {
+  padding: none; }
+
+.col-sm-12 {
   padding: none; }
 
 .col-xs-12 {
@@ -88,19 +86,21 @@ hr {
 .spacer-bottom {
   margin-bottom: 40px; }
 
-.middle {
-  margin: 10px auto;
-  text-align: center; }
+hr {
+  color: #B1FF4A;
+  border: 3px solid #B1FF4A;
+  margin-top: 60px; }
 
+/* images */
 .image {
   max-width: 274px; }
 
-.arrow {
-  color: #B1FF4A;
-  font-family: "Fredoka One", cursive;
+/*.arrow {
+  color: $green;
+  font-family: $primary;
   font-size: 30px;
-  margin-top: 40px; }
-
+  margin-top: 40px;
+}*/
 h1 {
   font-family: "Fredoka One", cursive;
   font-size: 5.25em;
@@ -117,7 +117,7 @@ h2 {
   margin-top: 10px; }
 
 h3 {
-  font-family: "Nixie One", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 1.5em;
   color: white;
   text-align: center;
@@ -136,16 +136,19 @@ h5 {
   font-size: 5em;
   color: #B1FF4A;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 15px; }
 
 h6 {
-  font-family: "Nixie One", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   color: white;
   background-color: #3685BF;
-  padding: 12px 5px;
+  padding: 12px 8px;
   text-align: left;
-  display: inline-block; }
+  display: inline-block;
+  -webkit-appearance: none; }
 
 h6#pink {
   background-color: #FF0062;
@@ -163,14 +166,27 @@ p {
 .p {
   color: #3685BF;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 28px;
   text-align: left;
   margin-bottom: 10px; }
+
+span {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  color: #3685BF;
+  font-size: 1.2em;
+  display: inline-block;
+  text-align: left;
+  padding: 10px 10px 10px 0px; }
 
 .icon {
   display: block;
   margin: 0 auto;
   text-align: center; }
+
+.project {
+  min-height: 100vh; }
 
 .row {
   margin: 0 auto;
@@ -180,12 +196,15 @@ p {
   margin: 40px auto;
   text-align: left; }
 
-li {
+#tech-list {
   text-decoration: none;
   list-style: none;
-  font-family: "Fredoka One", cursive;
-  color: #FF0062;
-  font-size: 1.2em; }
+  font-family: "Lato", sans-serif;
+  color: #3685BF;
+  font-size: 1.2em;
+  display: inline-block;
+  text-align: left;
+  padding: 10px 10px 10px 0px; }
 
 #col-align-left {
   text-align: left; }
@@ -355,7 +374,7 @@ input:hover {
   display: none; }
 
 .info {
-  padding-top: 10px; }
+  padding-top: 24px; }
 
 .fa {
   color: white;
