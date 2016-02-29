@@ -1,5 +1,4 @@
 /* reset */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,6 +19,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -49,7 +49,6 @@ $primary:'Fredoka One', cursive;
 $secondary: 'Lato', sans-serif;
 
 /* colors */
-
 $light-pink: #eda9c4;
 $pink: #FF0062;
 $green: #B1FF4A;
@@ -93,6 +92,14 @@ canvas {
   padding: none;
 }
 
+#col-align-left {
+  text-align: left;
+}
+
+#col-align-right {
+  text-align: right;
+}
+
 .center {
   margin: 0 auto;
   text-align: center;
@@ -112,25 +119,12 @@ hr {
   margin-top: 60px;
 }
 
-/* images */
-.image {
-  max-width: 274px;
-}
-
-/*.arrow {
-  color: $green;
-  font-family: $primary;
-  font-size: 30px;
-  margin-top: 40px;
-}*/
-
 h1 {
   font-family: $primary;
   font-size: 5.25em;
   color: $pink;
   text-align: center;
   text-decoration: none;
-  /*margin: 0px 5px;*/
 }
 
 h2 {
@@ -234,6 +228,11 @@ span {
   text-align: left;
 }
 
+.row#align-left {
+  margin: 0 auto;
+  text-align: left;
+}
+
 #tech-list {
   text-decoration: none;
   list-style: none;
@@ -243,14 +242,6 @@ span {
   display: inline-block;
   text-align: left;
   padding: 10px 10px 10px 0px;
-}
-
-#col-align-left {
-  text-align: left;
-}
-
-#col-align-right {
-  text-align: right;
 }
 
 .animation-greeting {
@@ -291,11 +282,6 @@ span {
   z-index: 10;
 }
 
-.row#align-left {
-  margin: 0 auto;
-  text-align: left;
-}
-
 .buttons {
   margin: 2% 38%;
   text-align: center;
@@ -327,6 +313,11 @@ span {
   width: 100%;
   padding: 30px;
   margin-top: 50px;
+}
+
+/* images */
+.image {
+  max-width: 274px;
 }
 
 #headshot {

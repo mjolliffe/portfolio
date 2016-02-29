@@ -76,6 +76,12 @@ canvas {
 .col-xs-12 {
   padding: none; }
 
+#col-align-left {
+  text-align: left; }
+
+#col-align-right {
+  text-align: right; }
+
 .center {
   margin: 0 auto;
   text-align: center; }
@@ -91,23 +97,12 @@ hr {
   border: 3px solid #B1FF4A;
   margin-top: 60px; }
 
-/* images */
-.image {
-  max-width: 274px; }
-
-/*.arrow {
-  color: $green;
-  font-family: $primary;
-  font-size: 30px;
-  margin-top: 40px;
-}*/
 h1 {
   font-family: "Fredoka One", cursive;
   font-size: 5.25em;
   color: #FF0062;
   text-align: center;
-  text-decoration: none;
-  /*margin: 0px 5px;*/ }
+  text-decoration: none; }
 
 h2 {
   font-family: "Fredoka One", cursive;
@@ -196,6 +191,10 @@ span {
   margin: 40px auto;
   text-align: left; }
 
+.row#align-left {
+  margin: 0 auto;
+  text-align: left; }
+
 #tech-list {
   text-decoration: none;
   list-style: none;
@@ -205,12 +204,6 @@ span {
   display: inline-block;
   text-align: left;
   padding: 10px 10px 10px 0px; }
-
-#col-align-left {
-  text-align: left; }
-
-#col-align-right {
-  text-align: right; }
 
 .animation-greeting {
   min-height: 100vh;
@@ -247,10 +240,6 @@ span {
   margin: 0 auto;
   z-index: 10; }
 
-.row#align-left {
-  margin: 0 auto;
-  text-align: left; }
-
 .buttons {
   margin: 2% 38%;
   text-align: center; }
@@ -278,6 +267,10 @@ span {
   width: 100%;
   padding: 30px;
   margin-top: 50px; }
+
+/* images */
+.image {
+  max-width: 274px; }
 
 #headshot {
   width: 274px;
