@@ -413,6 +413,14 @@ input:hover {
   display: none;
 }
 
+.carousel-indicators li {
+  border: 1px solid $pink;
+}
+
+.carousel-indicators li.active {
+  background-color: $pink;
+}
+
 .info {
   padding-top: 24px;
 }

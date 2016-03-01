@@ -366,6 +366,12 @@ input:hover {
 .carousel-control {
   display: none; }
 
+.carousel-indicators li {
+  border: 1px solid #FF0062; }
+
+.carousel-indicators li.active {
+  background-color: #FF0062; }
+
 .info {
   padding-top: 24px; }
 
