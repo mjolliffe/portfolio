@@ -52,7 +52,7 @@ angular.module('Portfolio')
       "slides":[{image: "assets/images/milkyweb_pink_500.jpg", description:""},
                 {image: "assets/images/milkyweb_zoom_500.jpg", description:""}],
       "date": 2015,
-      "description": "The Milky Web is a project created as a commentary on raising children in a tech-focused world. The idea stems from the concern that young children are missing out on important human connections and replacing them with digital interactions. Poster printed on Paper. 90cm x 128cm.",
+      "description": "The Milky Web is a project created as a commentary on raising children in a tech-focused world. The idea stems from the concern that young children are missing out on important human connections by replacing them with digital ones. Poster printed on Paper. 90cm x 128cm.",
       "web": false,
       "design": true,
       "print": true,
