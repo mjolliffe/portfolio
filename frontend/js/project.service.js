@@ -20,7 +20,7 @@ angular.module('Portfolio')
     {
       "id": 1,
       "name": "Aleph Bet - Hebrew Alphabet Learning Game",
-      "image": "assets/images/alephbet.gif",
+      "image": "assets/images/alephbet2.gif",
       "slides":[{image: "assets/images/alephbet.gif", description:""}],
       "date": 2015,
       "description": "This interactive game pits learners of the Hebrew alphabet (aka alephbet) against each other in a race to identify the most characters before time runs out.",
