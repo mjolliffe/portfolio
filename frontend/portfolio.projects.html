@@ -1,8 +1,8 @@
 <div ui-view id="entries">
   <div class="container project" ng-controller="ProjectsController" class="spacer-top">
     <div class="col-md-12 center spacer-bottom">
-      <a ng-href="#/portfolio/{{page-1}}"><h5 ng-show="project.id != 0">-</h5></a>
-      <a ng-href="#/portfolio/{{page+1}}"><h5 ng-show="project.id != 13">+</h5></a>
+      <a ng-href="#/portfolio/{{page-1}}"><h5 ng-show="project.id != 0"><</h5></a>
+      <a ng-href="#/portfolio/{{page+1}}"><h5 ng-show="project.id != 13">></h5></a>
     </div>
     <div class="row spacer-top">
       <div class="col-xs-12 col-sm-12 col-md-4 center spacer-bottom">
