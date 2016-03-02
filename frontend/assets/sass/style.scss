@@ -62,10 +62,15 @@ $dark-green: #77AB31;
           box-sizing: border-box;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   font-family: $secondary;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 200px auto;
 }
 /*
 canvas {
@@ -193,8 +198,15 @@ p {
   color: $blue;
   font-size: 20px;
   line-height: 28px;
-  text-align: left;
   margin-bottom: 10px;
+  text-align: left;
+}
+
+.p-large {
+  color: white;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: left;
 }
 
 span {
@@ -212,11 +224,12 @@ span {
   display: block;
   margin: 0 auto;
   text-align: center;
+  width: 12%;
 }
 
-.project {
+/*.project {
   min-height: 100vh;
-}
+}*/
 
 .row {
   margin: 0 auto;
@@ -231,6 +244,10 @@ span {
 .row#align-left {
   margin: 0 auto;
   text-align: left;
+}
+
+.row#padded-row {
+  padding-top: 60px;
 }
 
 #tech-list {
@@ -301,8 +318,8 @@ span {
   padding-top: 20px;
 }
 
-#green-banner {
-  background-color: $dark-green;
+#blue-banner {
+  background-color: $blue;
   color: white;
   padding: 30px;
   margin: 2% 0px;
@@ -323,7 +340,7 @@ span {
 #headshot {
   width: 274px;
   height: 274px;
-  border: 20px inset $blue;
+  border: 20px inset $green;
   border-radius: 50%;
 }
 
@@ -422,10 +439,20 @@ input:hover {
 }
 
 .info {
-  padding-top: 24px;
+  padding: 60px 0px;
 }
 
 .fa {
   color: white;
-  padding: 30px 5px 32px 0px;
+  padding: 0px 5px 32px 0px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+  background-color: $pink;
+  vertical-align: baseline;
 }

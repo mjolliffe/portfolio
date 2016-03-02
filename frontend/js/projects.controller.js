@@ -14,5 +14,4 @@ function ProjectsController (ProjectData, $state, $stateParams, $scope){
   $scope.photos = $scope.project.photos
 
   $scope.page = $scope.project.id
-
 }
